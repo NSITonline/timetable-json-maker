@@ -65,7 +65,15 @@
 		</table>
 	</div>
 </div>
+<div class="clearfix"></div>
 <hr>
+<div class="container">
+	<div class="btn-group pull-right" role="group">
+		<button type="button" class="btn btn-default" id="refresh-button">Refresh</button>
+		<button type="button" class="btn btn-success" id="submit-button">Submit</button>
+	</div>
+</div>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
