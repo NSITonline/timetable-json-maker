@@ -1,6 +1,8 @@
 <?php
 	require 'inc/connection.inc.php';
 	require 'inc/constant.inc.php';
+
+	$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
 ?>
 
 <!DOCTYPE html>
@@ -19,15 +21,17 @@
 	<meta name="description" content="">
     <meta name="keywords" content="">
     <title>NSITonline | Timetable Maker</title>
+
 </head>
 <body>
 <hr>
-<div class="container">
+<div class="col-md-12">
 	<div class="table-responsive">
 		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th>Day</th>
+					<th>8:30 - 9:30</th>
 					<th>9:30 - 10:30</th>
 					<th>10:30 - 11:30</th>
 					<th>11:30 - 12:30</th>
@@ -40,531 +44,23 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">Sunday</th>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-					<td>
-						<select class="js-example-basic-single">
-							<option>Theory</option>
-							<option>Lab</option>
-							<option>Break</option>
-							<option>LunchBreak</option>
-						</select>
-					</td>
-				</tr>
+<?php
+	$key = 0;
+	foreach($DAY_OF_WEEK as $day){
+		echo '<tr><th scope="row">' . $day . '</th>';
+
+		for($i=0; $i<10; $i++){
+			echo '
+			<td>
+				<select class="js-example-basic-single" data-field-name="' . $key . '/' . $i . '">' . $field_type_string . '</select>
+				<div></div>
+			</td>';
+		}
+
+		echo '</tr>';
+		$key++;
+	}
+?>
 			</tbody>
 		</table>
 	</div>
@@ -574,6 +70,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 <script type="text/javascript">
 

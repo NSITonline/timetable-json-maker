@@ -1,3 +1,3 @@
 <?php
 
-	$DAY_OF_WEEK = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+	$DAY_OF_WEEK = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
