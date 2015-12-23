@@ -4,12 +4,33 @@ function isArray(array, element) {
     return array.indexOf(element) > -1;
 }
 
-function add_fields(flag, div){
+function addFields(flag, div){
 	if(flag){
 		div.html('<input class="form-control input-sm" placeholder="subject"><input class="form-control input-sm" placeholder="professor FH"><input class="form-control input-sm" placeholder="room FH"><input class="form-control input-sm" placeholder="professor SH"><input class="form-control input-sm" placeholder="room SH">');
 	} else {
 		div.html('<input class="form-control input-sm" placeholder="subject"><input class="form-control input-sm" placeholder="professor code"><input class="form-control input-sm" placeholder="room">');
 	}
+}
+
+function sendData(json){
+	var table = $('body').find('table');
+    $.ajax({
+        type : 'POST',
+        data : {
+            json : JSON.stringify(json)
+        },
+        url : config_api_url + "save-response.php",
+        success: function(data) {                    
+            alert("success");
+            location.reload();
+        },
+        beforeSend: function() {
+            table.css({'opacity' : '0.4'});
+        },
+        complete: function() {
+            table.css({'opacity' : '1.0'});
+        }
+    });
 }
 
 $(document).ready(function(){
@@ -21,12 +42,12 @@ $(document).ready(function(){
 		switch(value){
 			case "theory" : 
 				selected_div.html('');
-				add_fields(false, selected_div);
+				addFields(false, selected_div);
 				break;
 
 			case "lab" :
 				selected_div.html('');
-				add_fields(true, selected_div);
+				addFields(true, selected_div);
 				break;
 			case "break" : case "lunch break" :
 				selected_div.html('');
@@ -102,7 +123,8 @@ $(document).ready(function(){
 			if(!send_flag){
 				alert("Fields not complete");
 			} else {
-				console.log(JSON.stringify(sendJSON));
+				// console.log(JSON.stringify(sendJSON));
+				sendData(sendJSON);
 			}
 		}
 	});

@@ -1,11 +1,11 @@
 <?php
 	require 'inc/connection.inc.php';
 	require 'inc/constant.inc.php';
-	require 'inc/function.inc.php';
+	require 'inc/function.public.inc.php';
 
 	$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,15 @@
 	<meta name="description" content="">
     <meta name="keywords" content="">
     <title>NSITonline | Timetable Maker</title>
+    <script type="text/javascript">
+<?php
 
+	$current_url = explode('/', returnCurrentURL());
+	unset($current_url[count($current_url) - 1 ]);
+	echo "\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL;
+
+?>
+    </script>
 </head>
 <body>
 <hr>
