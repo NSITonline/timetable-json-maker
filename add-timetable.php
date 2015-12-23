@@ -1,6 +1,7 @@
 <?php
 	require 'inc/connection.inc.php';
 	require 'inc/constant.inc.php';
+	require 'inc/function.inc.php';
 
 	$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
 ?>
@@ -24,6 +25,49 @@
 
 </head>
 <body>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 text-center">Branch</div>
+		<div class="col-md-4 text-center">Semester</div>
+		<div class="col-md-4 text-center">Section</div>
+	</div>
+	<div class="row">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-md-4">
+					<select class="form-control" id="branch_select">
+						<option value="1">COE</option>
+						<option value="2">IT</option>
+						<option value="3">ECE</option>
+						<option value="4">MPAE</option>
+						<option value="5">ICE</option>
+						<option value="6">BT</option>
+						<option value="7">ME</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select class="form-control" id="semester_select">
+<?php
+	for($i=1; $i<=8; $i++){
+		echo '<option value="' . $i . '">' . romanic_number($i) . '</option>' . PHP_EOL;
+	}
+?>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select class="form-control" id="section_select">
+<?php
+	for($i=1; $i<=3; $i++){
+		echo '<option value="' . $i . '">' . romanic_number($i) . '</option>' . PHP_EOL;
+	}
+?>
+					</select>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 <hr>
 <div class="col-md-12">
 	<div class="table-responsive">
