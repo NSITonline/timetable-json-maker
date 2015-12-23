@@ -1,27 +1,18 @@
 <?php
-	require 'inc/connection.inc.php';
-	require 'inc/constant.inc.php';
-	require 'inc/function.public.inc.php';
+	require_once 'inc/login.function.inc.php';
+	require_once 'inc/connection.inc.php';
+	require_once 'inc/constant.inc.php';
+	require_once 'inc/function.public.inc.php';
 
 	$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
 
+	if(!loggedIn())
+		header('Location: index.php');
+
+
+	include 'inc/public/meta.inc.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="">
-
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/select2.min.css">
-
-	<meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>NSITonline | Timetable Maker</title>
     <script type="text/javascript">
 <?php
 
@@ -33,12 +24,16 @@
     </script>
 </head>
 <body>
-<hr>
+<?php
+
+	include 'inc/public/header.inc.php';
+
+?>
 <div class="container">
 	<div class="row">
-		<div class="col-md-4 text-center">Branch</div>
-		<div class="col-md-4 text-center">Semester</div>
-		<div class="col-md-4 text-center">Section</div>
+		<div class="col-md-4 text-center select-label-text">Branch</div>
+		<div class="col-md-4 text-center select-label-text">Semester</div>
+		<div class="col-md-4 text-center select-label-text">Section</div>
 	</div>
 	<div class="row">
 		<form class="form-horizontal">
@@ -118,7 +113,6 @@
 	</div>
 </div>
 <div class="clearfix"></div>
-<hr>
 <div class="container">
 	<div class="btn-group pull-right" role="group">
 		<button type="button" class="btn btn-default" id="refresh-button">Refresh</button>
@@ -126,6 +120,7 @@
 	</div>
 </div>
 
+<hr>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
