@@ -1,0 +1,413 @@
+{
+  "metadata":{
+    "branch" : "ICE",
+    "semester" : 5,
+    "section": 3,
+    "last_updated" : "4-8-2015"
+  },
+  "subjects": [
+    {
+      "code": "IC-301",
+      "title": "Analog Digital Comm."
+    },
+    {
+      "code": "IC-302",
+      "title": "Analytical Instt."
+    },
+    {
+      "code": "IC-303",
+      "title": "DIC-1"
+    },
+    {
+      "code": "IC-304",
+      "title": "LIC"
+    },
+    {
+      "code": "IC-305",
+      "title": "IOME"
+    },
+    {
+      "code": "IC-306",
+      "title": "ADC Lab"
+    },
+    {
+      "code": "IC-307",
+      "title": "DIC Lab"
+    },
+    {
+      "code": "IC-308",
+      "title": "LIC Lab"
+    },
+    {
+      "code": "IC-309",
+      "title": "Programming LAB"
+    }
+    
+  ],
+  "professors": [
+    {
+      "codename": "MJ",
+      "fullname": "Manan Jani"
+    },
+    {
+      "codename": "SNL",
+      "fullname": "Sonal"
+    },
+    {
+      "codename": "SJN",
+      "fullname": "Sree Jeet Nair"
+    },
+    {
+      "codename": "VKP",
+      "fullname": "Vishal Kumar Pandey"
+    },
+  
+    {
+      "codename": "SG",
+      "fullname": "Sangeeta Gupta"
+    }
+   
+     
+	
+   
+  ],
+  "timetable": [
+    [ 
+	   {
+        "subject": "break"
+      },
+	  
+      {
+        "subject": "IC-302",
+        "professor": "SG",
+        "type": "theory",
+        "room": "118/VI"
+      },
+      {
+        "subject": "IC-303",
+        "professor": "SJN",
+        "type": "theory",
+        "room": "117/VI"
+      },
+	  {
+        "subject": "IC-307,IC-308",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-307,IC-308",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-301",
+        "professor": "MJ",
+        "type": "theory",
+        "room": "117/VI"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "IC-304",
+        "professor": "VKP",
+        "type": "theory",
+        "room": "117/VI"
+      },
+	  {
+        "subject": "IC-305",
+        "professor": " ",
+        "type": "theory",
+        "room": "117/VI"
+      },
+	
+	  
+      {
+        "subject": "break"
+      }
+    ],
+    [ 
+	  
+	  {
+        "subject": "break"
+      },
+      {
+        "subject": "IC-301",
+        "professor": "MJ",
+        "type": "theory",
+        "room": "118/VI"
+      },
+	   {
+        "subject": "IC-302",
+        "professor": "SG",
+        "type": "theory",
+        "room": "118/VI"
+      },
+	   {
+        "subject": "IC-303",
+        "professor": "SJN",
+        "type": "theory",
+        "room": "118/VI"
+      },
+	
+	  {
+        "subject": "lunchbreak"
+      },
+	 {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "IC-304",
+        "professor": "VKP",
+        "type": "theory",
+        "room": "117/VI"
+      },
+	  {
+        "subject": "IC-308,IC-309",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-308,IC-309",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [ 
+      {
+        "subject": "IC-305",
+        "professor": " ",
+        "room": "117/VI",
+        "type": "theory"
+      },
+	  {
+        "subject": "IC-306,IC-307",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	   {
+        "subject": "IC-306,IC-307",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-304",
+        "professor": "VKP",
+        "room": "117/VI",
+        "type": "theory"
+      },
+	  
+      {
+        "subject": "lunchbreak"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+	  
+      {
+        "subject": "IC-302",
+        "professor": "SG",
+        "room": "118/VI",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-303",
+        "professor": "SJN",
+        "room": "117/VI",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-301",
+        "professor": "MJ",
+        "room": "117/VI",
+        "type": "theory"
+      },
+	  
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	   {
+        "subject": "break"
+      },
+	   {
+        "subject": "IC-309,IC-306",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-309,IC-306",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },
+      {
+        "subject": "IC-304",
+        "professor": "VKP",
+        "room": "117/VI",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-305",
+        "professor": " ",
+        "room": "117/VI",
+        "type": "theory"
+      },
+	 
+      {
+        "subject": "break"
+      }
+    ],
+    [ 
+	  {
+        "subject": "break"
+      },
+	  
+	   {
+        "subject": "IC-303",
+        "professor": "SJN",
+        "room": "117/VI",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-305",
+        "professor": " ",
+        "room": "117/VI",
+        "type": "theory"
+      },
+	   {
+        "subject": "IC-302",
+        "professor": "SG",
+        "room": "118/VI",
+        "type": "theory"
+      },
+	   {
+        "subject": "IC-301",
+        "professor": "MJ",
+        "room": "118/VI",
+        "type": "theory"
+      },
+	  
+      {
+        "subject": "lunchbreak"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+     
+	 
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

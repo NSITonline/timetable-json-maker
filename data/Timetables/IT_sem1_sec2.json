@@ -1,0 +1,482 @@
+{
+  "metadata":{
+    "branch" : "IT",
+    "semester" : 2,
+    "section": 2,
+    "last_updated" : "7-8-2015"
+  },
+  "subjects": [
+    {
+      "code": "IT-101",
+      "title": "English"
+    },
+    {
+      "code": "IT-102",
+      "title": "Mathematics-I"
+    },
+    {
+      "code": "IT-103",
+      "title": "Physics-I"
+    },
+    {
+      "code": "IT-104",
+      "title": "Chemistry"
+    },
+    {
+      "code": "IT-105",
+      "title": "Manufacturing Processes"
+    },
+    {
+      "code": "IT-106",
+      "title": "Engineering Drawing Lab"
+    },
+    {
+      "code": "IT-107",
+      "title": "Physics-I Lab"
+    },
+    {
+      "code": "IT-108",
+      "title": "Chemistry Lab"
+    },
+    {
+      "code": "IT-109",
+      "title": "Workshop I"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "GF",
+      "fullname": "Guest Faculty"
+    },
+    {
+      "codename": "NM",
+      "fullname": "Neha Malik"
+    },
+    {
+      "codename": "MA",
+      "fullname": "Maghar Ali"
+    },
+    {
+      "codename": "DS",
+      "fullname": "Deeksha Sharma"
+    },
+    {
+      "codename": "MK",
+      "fullname": "Manish Kumar"
+    },
+    {
+      "codename": "DN",
+      "fullname": "Dayanand"
+    },
+    {
+      "codename": "NS",
+      "fullname": "Nandini Sharma"
+    },
+    {
+      "codename": "AS",
+      "fullname": "Anjana Sarkar"
+    },
+    {
+      "codename": "PJ",
+      "fullname": "Purnima Jain"
+    },
+    {
+      "codename": "AVM",
+      "fullname": "AV Muley"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "IT-102",
+        "professor": "NM",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-101",
+        "professor": "GF",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-103",
+        "professor": "MA",
+        "type": "theory",
+        "room": "LB5"
+      },
+      {
+        "subject": "IT-101",
+        "professor": "GF",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "lunch break"
+      },
+       {
+        "subject": "IT-104",
+        "professor": "DS",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-103",
+        "professor": "MA",
+        "type": "theory",
+        "room": "LB5"
+      },
+       {
+        "subject": "IT-104",
+        "professor": "DS",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-105",
+        "professor": "MK",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "IT-107, IT-108",
+        "type": "lab",
+        "professorFH": "DN",
+        "roomFH": "219/VI",
+        "professorSH": "AS",
+        "roomSH": "319/VI"
+      },
+      {
+        "subject": "IT-107, IT-108",
+        "type": "lab",
+        "professorFH": "DN",
+        "roomFH": "219/VI",
+        "professorSH": "AS",
+        "roomSH": "319/VI"
+      },
+      {
+        "subject": "break, IT-108",
+        "type": "lab",
+        "professorSH": "AS",
+        "roomSH": "319/VI"
+      },
+      {
+        "subject": "IT-104",
+        "professor": "DS",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "lunch break"
+      },
+      {
+        "subject": "IT-104",
+        "professor": "DS",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-109",
+        "professorFH": "AVM",
+        "professorSH": "",
+        "roomSH": "",
+        "roomFH": "Workshop",
+        "type": "lab"
+      },
+      {
+        "subject": "IT-109",
+        "professorSH": "",
+        "roomSH": "",
+        "professorFH": "AVM",
+        "roomFH": "Workshop",
+        "type": "lab"
+      },
+      {
+        "subject": "IT-109",
+        "professorFH": "AVM",
+        "roomFH": "Workshop",
+        "professorSH": "",
+        "roomSH": "",
+        
+        "type": "lab"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "IT-101",
+        "professor": "GF",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-105",
+        "professor": "MK",
+        "room": "LB5",
+        "type": "theory"
+      },
+     {
+        "subject": "IT-101",
+        "professor": "GF",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-102",
+        "professor": "NM",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "IT-105",
+        "professor": "MK",
+        "room": "LB5",
+        "type": "theory"
+      },
+      
+      {
+        "subject": "IT-102",
+        "professor": "NM",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "lunch break"
+      },
+      {
+        "subject": "IT-108, IT-107",
+        "type": "lab",
+        "professorFH": "PJ",
+        "roomFH": "319/VI",
+        "professorSH": "NS",
+        "roomSH": "219/VI"
+      },
+      {
+        "subject": "IT-108, IT-107",
+        "type": "lab",
+        "professorFH": "PJ",
+        "roomFH": "319/VI",
+        "professorSH": "NS",
+        "roomSH": "219/VI"
+      },
+      {
+        "subject": "IT-108, break",
+        "type": "lab",
+        "professorFH": "PJ",
+        "roomFH": "319/VI"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "IT-105",
+        "professor": "MK",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-103",
+        "professor": "MA",
+        "type": "theory",
+        "room": "LB5"
+      },
+      {
+        "subject": "IT-102",
+        "professor": "NM",
+        "room": "LB5",
+        "type": "theory"
+      },
+      {
+        "subject": "IT-103",
+        "professor": "MA",
+        "type": "theory",
+        "room": "LB5"
+      },
+      {
+        "subject": "lunch break"
+      },
+      {
+        "subject": "IT-106",
+        "type": "lab",
+        "professorFH": "MK,GF",
+        "roomFH": "232/VI",
+        "professorSH": "",
+        "roomSH": ""
+        
+      },
+      {
+        "subject": "IT-106",
+        "type": "lab",
+        "professorFH": "MK,GF",
+        "roomFH": "232/VI","professorSH": "",
+        "roomSH": ""
+        
+      },
+      {
+        "subject": "IT-106",
+        "type": "lab",
+        "professorSH": "",
+        "roomSH": "",
+        
+        "professorFH": "MK,GF",
+        "roomFH": "232/VI"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

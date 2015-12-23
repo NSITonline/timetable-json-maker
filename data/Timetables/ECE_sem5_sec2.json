@@ -1,0 +1,416 @@
+{
+  "metadata":{
+    "branch" : "ECE",
+    "semester" : 5,
+    "section": 2,
+    "last_updated" : "8-5-3015"
+  },
+  "subjects": [
+    {
+      "code": "EC-301",
+      "title": "Transmission lines & wave guides"
+    },
+    {
+      "code": "EC-302",
+      "title": "Control engineering"
+    },
+    {
+      "code": "EC-303",
+      "title": "Computer systems & organisations"
+    },
+    {
+      "code": "EC-304",
+      "title": "Linear integrated circuits"
+    },
+    {
+      "code": "EC-305",
+      "title": "Ind. Org & managerial Economics"
+    },
+    {
+      "code": "EC-306",
+      "title": "Computer systems & organisations"
+    },
+    {
+      "code": "EC-307",
+      "title": "Linear integrated circuits"
+    },
+    {
+      "code": "EC-308",
+      "title": "Control engineering"
+    },
+    {
+      "code": "EC-309",
+      "title": "Programming III"
+    }   
+    ],
+  "professors": [
+    {
+      "codename": "HP",
+      "fullname": "H. Parthasarthy"
+    },
+    {
+      "codename": "NSG",
+      "fullname": "Nishi Gupta"
+    },
+    {
+      "codename": "BA",
+      "fullname": "Bhawna Agarwal"
+    },
+    {
+      "codename": "TRR",
+      "fullname": "Tarun Rawat"
+    },
+    {
+      "codename": "MKP",
+      "fullname": "MK Pandey"
+    },
+    {
+      "codename": "PS",
+      "fullname": "Parineeta Sindhu"
+    },
+    {
+      "codename": "VS",
+      "fullname": "Vicky Suri"
+    },
+    {
+      "codename": "SH",
+      "fullname": "Sushma Hans"
+    },
+    {
+      "codename": "OPS",
+      "fullname": "OP Sharma"
+    },
+    {
+      "codename": "VIJ",
+      "fullname": "Vijander"
+    },
+    {
+      "codename": "PRA",
+      "fullname": "Parul Arora"
+    },
+  {
+      "codename": "PNK",
+      "fullname": "PN Kathuria"
+    },
+	{
+      "codename": "SD",
+      "fullname": "Sachin Dubey"
+    },
+	{
+      "codename": "PNM",
+      "fullname": "Parul Narula"
+    },
+	{
+      "codename": "VNK",
+      "fullname": "Vineet Kumar"
+    },
+	{
+      "codename": "PR",
+      "fullname": "Poonam Rani"
+    },
+    {
+      "codename": "AKB",
+      "fullname": "Ankita Bansal"
+    },
+	{
+      "codename": "VEN",
+      "fullname": "Veenu"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "EC-304",
+        "professor": "BA",
+        "type": "theory",
+        "room": "13/IV"
+      },
+      {
+        "subject": "EC-302",
+        "professor": "VIJ",
+        "type": "theory",
+        "room": "13/IV"
+      },
+	  {
+        "subject": "EC-308(E1),EC-309(E2)",
+        "professorFH": "PRA",
+        "roomFH": "112/VI",
+        "professorSH": "VEN",
+        "roomSH": "202/V",
+	     "type" : "lab"
+      },
+      {
+        "subject": "EC-308(E1),EC-309(E2)",
+        "professorFH": "PRA",
+        "roomFH": "112/VI",
+        "professorSH": "VEN",
+        "roomSH": "202/V",
+	     "type" : "lab"
+      },
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-305",
+        "professor": "DAK",
+        "type": "theory",
+        "room": "14/IV"
+      },
+      {
+        "subject": "EC-301",
+        "professor": "HP",
+        "type": "theory",
+        "room": "14/IV"
+      },
+	  {
+        "subject": "EC-305",
+        "professor": "DAK",
+        "type": "theory",
+        "room": "14/IV"
+      }
+    ],
+    [
+      {
+        "subject": "EC-304",
+        "professor": "BA",
+        "type": "theory",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-301",
+        "professor": "HP",
+        "type": "theory",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-303",
+        "professor": "NSG",
+        "type": "theory",
+        "room": "24/IV"
+      },
+	  {
+        "subject": "EC-302",
+        "professor": "VIJ",
+        "type": "theory",
+        "room": "24/IV"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-305",
+        "professor": "DAK",
+        "type": "theory",
+        "room": "24/IV"
+      },
+	{
+        "subject": "EC-307(E2),EC-306(E1)",
+        "professorFH": "PR",
+        "roomFH": "216/IV",
+        "professorSH": "TKR",
+        "roomSH": "112/IV",
+	     "type" : "lab"
+      },
+      {
+        "subject": "EC-307(E2),EC-306(E1)",
+        "professorFH": "PR",
+        "roomFH": "216/IV",
+        "professorSH": "TKR",
+        "roomSH": "112/IV",
+	     "type" : "lab"
+      }
+    ],
+    [
+      {
+        "subject": "EC-308(E2),EC-309(E1)",
+        "professorFH": "VEN",
+        "roomFH": "202/V",
+        "professorSH": "VNK",
+        "roomSH": "112/VI",
+	     "type" : "lab"
+      },
+      {
+        "subject": "EC-308(E2),EC-309(E1)",
+        "professorFH": "VEN",
+        "roomFH": "202/V",
+        "professorSH": "VNK",
+        "roomSH": "112/VI",
+	     "type" : "lab"
+      },
+      {
+        "subject": "EC-306(E2),EC-307(E1)",
+        "professorFH": "OPS",
+        "roomFH": "216/IV",
+        "professorSH": "PR",
+        "roomSH": "112/IV",
+	     "type" : "lab"
+      },
+	  {
+        "subject": "EC-306(E2),EC-307(E1)",
+        "professorFH": "OPS",
+        "roomFH": "216/IV",
+        "professorSH": "PR",
+        "roomSH": "112/IV",
+	     "type" : "lab"
+      },
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-304",
+        "type": "theory",
+        "professor": "BA",
+        "room": "27/IV"
+      },
+      {
+        "subject": "EC-303",
+        "type": "theory",
+        "professor": "NSG",
+        "room": "27/IV"
+      },
+      {
+        "subject": "EC-302",
+        "type": "theory",
+        "professor": "VIJ",
+        "room": "27/IV"
+      }
+     ],
+    [
+      {
+        "subject": "EC-303",
+        "type": "theory",
+        "professor": "NSG",
+        "room": "002/8A"
+      },
+      {
+        "subject": "EC-302",
+        "type": "theory",
+        "professor": "VIJ",
+        "room": "002/8A"
+      },
+      {
+        "subject": "EC-304",
+        "type": "theory",
+        "professor": "BA",
+        "room": "215/V"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      }
+   ],
+   [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "EC-303",
+        "type": "theory",
+        "professor": "NSG",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-301",
+        "type": "theory",
+        "professor": "HP",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-305",
+        "type": "theory",
+        "professor": "DAK",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-301",
+        "type": "theory",
+        "professor": "HP",
+        "room": "24/IV"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

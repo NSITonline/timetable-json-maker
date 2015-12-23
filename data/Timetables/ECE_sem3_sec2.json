@@ -1,0 +1,474 @@
+{
+  "metadata":{
+    "branch" : "ECE",
+    "semester" : 3,
+    "section": 2,
+    "last_updated" : "8-5-2015"
+  },
+  "subjects": [
+    {
+      "code": "EC-201",
+      "title": "Electronics I"
+    },
+    {
+      "code": "EC-202",
+      "title": "Circuits and Systems I"
+    },
+    {
+      "code": "EC-203",
+      "title": "Electrical Machines I"
+    },
+    {
+      "code": "EC-204",
+      "title": "Electrical Measurements"
+    },
+    {
+      "code": "EC-205",
+      "title": "Mathematics III"
+    },
+    {
+      "code": "EC-206",
+      "title": "Electronics I"
+    },
+    {
+      "code": "EC-207",
+      "title": "Electrical Machines I"
+    },
+    {
+      "code": "EC-208",
+      "title": "Electrical Measurements"
+    },
+    {
+      "code": "EC-209",
+      "title": "Machine Drawing"
+    },
+  {
+      "code": "EC-210",
+      "title": "Programming I"
+    }
+    ],
+  "professors": [
+    {
+      "codename": "DVG",
+      "fullname": "DV Gadre"
+    },
+    {
+      "codename": "SJS",
+      "fullname": "Sujata Sengar"
+    },
+    {
+      "codename": "HSM",
+      "fullname": "Hasmat Malik"
+    },
+    {
+      "codename": "MHJ",
+      "fullname": "Mohit jain"
+    },
+    {
+      "codename": "GM",
+      "fullname": "Garima Manocha"
+    },
+    {
+      "codename": "BK",
+      "fullname": "Bhuvnesh kumar"
+    },
+    {
+      "codename": "JKS",
+      "fullname": "JK Singh"
+    },
+    {
+      "codename": "MS",
+      "fullname": "Maneesha Singh"
+    },
+    {
+      "codename": "LN",
+      "fullname": "Laxmi Narayana"
+    },
+    {
+      "codename": "NK",
+      "fullname": "Neeraj Kumar"
+    },
+    {
+      "codename": "AT",
+      "fullname": "Abhishek tewatia"
+    },
+	{
+      "codename": "VYA",
+      "fullname": "Vijayant Agarwal"
+    },
+	{
+      "codename": "BA",
+      "fullname": "Bhawna Agarwal"
+    },
+	{
+      "codename": "ANJ",
+      "fullname": "AN Jha"
+    },
+	{
+      "codename": "MAS",
+      "fullname": "Manisha Singh"
+    },
+	{
+      "codename": "SKC",
+      "fullname": "Sanjay Chak"
+    },
+	{
+      "codename": "SKR",
+      "fullname": "Suresh Kumar Raj"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "EC-203",
+        "professor": "JKM",
+        "type": "theory",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-207(E1),EC-208(E2)",
+        "professorFH": "ANJ",
+        "roomFH": "08/VI",
+        "professorSH": "MS",
+        "roomSH": "142/VI",
+	     "type" : "lab"
+      },
+      {
+        "subject": "EC-207(E1),EC-208(E2)",
+        "professorFH": "ANJ",
+        "roomFH": "08/VI",
+        "professorSH": "MS",
+        "roomSH": "142/VI",
+	     "type" : "lab"
+      },
+	  {
+        "subject": "EC-206(E1),EC-207(E2)",
+        "professorFH": "BA",
+        "roomFH": "12/IV",
+        "professorSH": "RJNS",
+        "roomSH": "08/VI",
+	     "type" : "lab"
+      },
+	  {
+        "subject": "EC-206(E1),EC-207(E2)",
+        "professorFH": "BA",
+        "roomFH": "12/IV",
+        "professorSH": "RJNS",
+        "roomSH": "08/VI",
+	     "type" : "lab"
+      },
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-202",
+        "professor": "SJS",
+        "type": "theory",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-20",
+        "professor": "MHJ",
+        "type": "theory",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-201",
+        "professor": "DVG",
+        "type": "theory",
+        "room": "24/IV"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-206(E2),EC-210(E1)",
+        "professorFH": "VG",
+        "roomFH": "318/VI,319/VI",
+        "professorSH": "SKR",
+        "roomSH": "12/IV",
+	 "type" : "lab"
+      },
+	{
+        "subject": "EC-210(E2),EC-208(E1)",
+        "professorFH": "VKS",
+        "roomFH": "142/VI",
+        "professorSH": "NK",
+        "roomSH": "318/VI,319/VI",
+	 "type" : "lab"
+      },
+      {
+        "subject": "EC-210(E2),EC-208(E1)",
+        "professorFH": "VKS",
+        "roomFH": "142/VI",
+        "professorSH": "NK",
+        "roomSH": "318/VI,319/VI",
+	 "type" : "lab"
+      }
+    ],
+    [
+      {
+        "subject": "EC-204",
+        "type": "theory",
+        "professor": "MHJ",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-202",
+        "type": "theory",
+        "professor": "SJS",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-205",
+        "type": "theory",
+        "professor": "GM",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-203",
+        "type": "theory",
+        "professor": "HSM",
+        "room": "24/IV"
+      },
+      {
+        "subject": "EC-201",
+        "type": "theory",
+        "professor": "DVG",
+        "room": "24/IV"
+      },
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-209",
+        "professorFH": "SKC,VYA",
+        "roomFH": "232/VI",
+        "professorSH": "",
+        "roomSH": "",
+	 "type" : "lab"
+      },
+      {
+        "subject": "EC-209",
+        "professorFH": "SKC,VYA",
+        "roomFH": "232/VI",
+        "professorSH": "",
+        "roomSH": "",
+	 "type" : "lab"
+      },
+      {
+        "subject": "EC-209",
+        "professorFH": "SKC,VYA",
+        "roomFH": "232/VI",
+        "professorSH": "",
+        "roomSH": "",
+	 "type" : "lab"
+      }
+     ],
+    [
+      {
+        "subject": "EC-205",
+        "professor": "GM",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-202",
+        "professor": "SJS",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-201",
+        "professor": "DVG",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-205",
+        "professor": "GM",
+        "room": "24/IV",
+        "type": "theory"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "EC-204",
+        "professor": "MHJ",
+        "room": "24/IV",
+        "type": "theory"
+      },      
+      {
+        "subject": "EC-203",
+        "professor": "HSM",
+        "room": "24/IV",
+        "type": "theory"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+   ],
+   [
+      {
+        "subject": "EC-203",
+        "professor": "HSM",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-204",
+        "professor": "MHJ",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-205",
+        "professor": "GM",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-202",
+        "professor": "SJS",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "EC-201",
+        "professor": "DVG",
+        "room": "24/IV",
+        "type": "theory"
+      },
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

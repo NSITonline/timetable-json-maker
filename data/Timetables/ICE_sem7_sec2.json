@@ -1,0 +1,341 @@
+{
+  "metadata":{
+    "branch" : "ICE",
+    "semester" : 7,
+    "section": 2,
+    "last_updated" : "8-1-2015"
+  },
+  "subjects": [
+    {
+      "code": "IC-401",
+      "title": "Control Systems"
+    },
+    {
+      "code": "IC-402",
+      "title": "Dic II"
+    },
+    {
+      "code": "ICE-403",
+      "title": "Process Control"
+    },
+    {
+      "code": "IC-404",
+      "title": "Biomedical Instt"
+    },
+    {
+      "code": "IC-405",
+      "title": "Microprocessor"
+    },
+    {
+      "code": "IC-406",
+      "title": "Control Systems Lab 112/VI"
+    },
+    {
+      "code": "IC-407",
+      "title": "Dic II Lab"
+    },
+    {
+      "code": "IC-408",
+      "title": "Biomedical Instt Lab212/VI"
+    },
+     {
+      "code": "IC-410",
+      "title": "Programming V"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "SMS",
+      "fullname": "Smriti Srivastava"
+    },
+    {
+      "codename": "VNK",
+      "fullname": "Vineet Kumar"
+    },
+    {
+      "codename": "SVG",
+      "fullname": "Sivangi Aggarwal"
+    },
+       {
+      "codename": "GF",
+      "fullname": "Guest Faculty"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "break"    },
+      {
+        "subject": "IC-405",
+        "professor": "THFI",
+        "type": "theory",
+        "room": " "
+      },
+      {
+        "subject": "IC-404",
+        "professor": "AVG",
+        "type": "theory",
+        "room": " "
+      },
+      {
+        "subject": "IC-406,IC-410",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": " ",
+        "professorSH": " ",
+        "roomSH": " "
+      },  
+       {
+        "subject": "break"
+      },    {
+        "subject": "IC-401",
+        "type": "theory",
+        "professor": "SMS",
+        "room": " "
+      },
+      {
+        "subject": "IC-403",
+        "professor": "VNK",
+        "type": "theory",
+        "room": " "
+      },
+      {
+        "subject": "IC-404",
+        "type": "theory",
+        "professor": "SVG",
+        "room": " "
+    }, 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }
+ ] , [ {
+        "subject": "break"
+      },{
+        "subject": "IC-407,IC-408",
+        "type": "lab",
+        "professorFH": "",
+        "roomFH": "",
+        "professorSH": "",
+        "roomSH": ""
+      } ,  {
+        "subject": "IC-403",
+        "professor": "VNK",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "IC-404",
+        "type": "theory",
+        "professor": "SVG",
+        "room": " "
+      },
+       {
+        "subject": "IC-405",
+        "type": "theory",
+        "professor": "TRFI",
+        "room": " "
+     }  ,
+      {
+        "subject": "IC-402",
+        "type": "theory",
+        "professor": "GF-2/EC",
+        "room": "" },
+             {
+        "subject": "break"
+      },
+        {
+        "subject": "break"
+      }   
+      , 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "IC-407,IC-408",
+        "type": "lab",
+        "professorFH": "",
+        "roomFH": "11",
+        "professorSH": "SNL",
+        "roomSH": "12"
+      } ,
+   {
+        "subject": "IC-401",
+        "professor": "SMS",
+        "room": " ",
+        "type": "theory"
+      } ,    {
+        "subject": "break"
+      },
+      {
+        "subject": "ICE*405",
+        "professor": "TRFI",
+        "room": "",
+        "type": "theory"
+      },
+     {
+        "subject": "IC-402",
+        "professor": "GF-2/EC",
+        "room": "",
+        "type": "theory"
+      },   {
+        "subject": "break"
+      },
+ {
+        "subject": "break"
+      },
+ {
+        "subject": "break"
+      },
+ {
+        "subject": "break"
+      }  , 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }  ],
+    [
+      {
+        "subject": " break"
+      },
+       {
+        "subject": "IC-401",
+        "professor": "SMS",
+        "room": " ",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-404",
+        "professor": "SVG",
+        "room": " ",
+        "type": "theory"
+      },
+ {
+        "subject": "IC-402",
+        "type": "theory",
+        "professor": "GF-2/EC",
+        "room": "" } ,     {
+        "subject": "break"
+      },
+  {
+        "subject": "IC-406,IC-410",
+        "type": "lab",
+        "professorFH": "",
+        "roomFH": "11",
+        "professorSH": "",
+        "roomSH": "12"
+      }   , {
+        "subject": "IC-403",
+        "professor": "VNK",
+        "room": "",
+        "type": "theory"
+      },
+ 
+      {
+        "subject": "break"
+      }
+   ,  {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }, 
+    {
+        "subject": "break"
+      }
+  ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "IC-402",
+        "professor": "GF-2/EC",
+        "room": "",
+        "type": "theory"
+      },
+       {
+        "subject": "IC-403",
+        "professor": "VNK",
+        "room": "",
+        "type": "theory"
+      },
+     {
+        "subject": "IC-405",
+        "type": "theory",
+        "professor": "TRFI",
+        "room": " "
+    },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "IC-401",
+        "professor": "SMS",
+        "room": " ",
+        "type": "theory"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

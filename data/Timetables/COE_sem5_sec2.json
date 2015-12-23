@@ -1,0 +1,426 @@
+{
+  "metadata":{
+    "branch" : "COE",
+    "semester" : 5,
+    "section": 2,
+    "last_updated" : "06-08-2015"
+  },
+  "subjects": [
+    {
+      "code": "COE-301",
+      "title": "Principles of Computer Graphics"
+    },
+    {
+      "code": "COE-302",
+      "title": "Descrate Maths and Design of Alg"
+    },
+    {
+      "code": "COE-303",
+      "title": "Computer System Org"
+    },
+    {
+      "code": "COE-304",
+      "title": ""
+    },
+    {
+      "code": "COE-305",
+      "title": "Industrial Org. and Mana. Eco"
+    },
+    {
+      "code": "COE-306",
+      "title": "Computer Systems Org"
+    },
+    {
+      "code": "COE-307",
+      "title": "Linear Integrated Circuits"
+    },
+    {
+      "code": "COE-308",
+      "title": "Principles of Computer Graphics"
+    },
+    {
+      "code": "COE-309",
+      "title": "Programming III"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "MK",
+      "fullname": "Manpreet Kaur"
+    },
+    {
+      "codename": "GTS",
+      "fullname": "Geetika Sarna"
+    },
+    {
+      "codename": "RJK",
+      "fullname": "Rajeev Kumar"
+    },
+    {
+      "codename": "SHG",
+      "fullname": "Shweta Gautam"
+    },
+    {
+      "codename": "MNK",
+      "fullname": "Maneesha Khanna"
+    },
+    {
+      "codename": "PD",
+      "fullname": "Pankaj Deshwal"
+    },
+    {
+      "codename": "DAK",
+      "fullname": "Dhuru Arun Kr"
+    },
+    {
+      "codename": "KSS",
+      "fullname": "Khushil Saini"
+    },
+    {
+      "codename": "VEN",
+      "fullname": "Veenu"
+    },
+    {
+      "codename": "ADG",
+      "fullname": "Anand Gupta"
+    },
+    {
+      "codename": "AA",
+      "fullname": "Apoorva Agarwal"
+    },
+    {
+      "codename": "SG",
+      "fullname": "Shweta Gautam"
+    },
+    {
+      "codename": "RUS",
+      "fullname": "Ritu Sibal"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-306,COE-307",
+        "type": "lab",
+        "professorFH": "RJK",
+        "roomFH": "012/V",
+        "professorSH": "AA",
+        "roomSH": "218/IV"
+      },
+      {
+        "subject": "COE-306,COE-307",
+        "type": "lab",
+        "professorFH": "RJK",
+        "roomFH": "012/V",
+        "professorSH": "AA",
+        "roomSH": "218/IV"
+      },
+      {
+        "subject": "COE-308,COE-306",
+        "type": "lab",
+        "professorFH": "ADJ",
+        "roomFH": "103/V",
+        "professorSH": "AA",
+        "roomSH": "012/V"
+      },
+      {
+        "subject": "COE-308,COE-306",
+        "type": "lab",
+        "professorFH": "ADJ",
+        "roomFH": "103/V",
+        "professorSH": "AA",
+        "roomSH": "012/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "GTS",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "MK",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "MK",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-309,COE-308",
+        "type": "lab",
+        "professorFH": "VES",
+        "roomFH": "012/V",
+        "professorSH": "ADG",
+        "roomSH": "103/V"
+      },
+      {
+        "subject": "COE-309,COE-308",
+        "type": "lab",
+        "professorFH": "VES",
+        "roomFH": "012/V",
+        "professorSH": "ADG",
+        "roomSH": "103/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "GTS",
+        "type": "theory",
+        "room": "312/V"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "312/V"
+      },
+      {
+        "subject": "COE-303",
+        "professor": "RJK",
+        "type": "theory",
+        "room": "312/V"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-305",
+        "professor": "MNK",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "COE-303",
+        "professor": "MNK",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "COE-305",
+        "professor": "MNK",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "GTS",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": " break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-305",
+        "professor": "PD",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "COE-303",
+        "professor": "RJK",
+        "type": "theory",
+        "room": "312/V"   
+      },
+      {
+        "subject": "COE-301",
+        "professor": "MK",
+        "type": "theory",
+        "room": "312/V"   
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-307,COE-309",
+        "type": "lab",
+        "professorFH": "SG",
+        "roomFH": "218/IV",
+        "professorSH": "SH",
+        "roomSH": "103/V"
+      },
+      {
+        "subject": "COE-307,COE-309",
+        "type": "lab",
+        "professorFH": "SG",
+        "roomFH": "218/IV",
+        "professorSH": "SH",
+        "roomSH": "103/V"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "GTS",
+        "type": "theory",
+        "room": "312/V"   
+      },
+      {
+        "subject": "COE-305",
+        "professor": "DAK",
+        "type": "theory",
+        "room": "312/V"   
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "312/V" 
+      },
+      {
+        "subject": "COE-303",
+        "professor": "RJK",
+        "type": "theory",
+        "room": "312/V"   
+      },
+      {
+        "subject": "COE-301",
+        "professor": "MK",
+        "type": "theory",
+        "room": "312/V"  
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

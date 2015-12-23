@@ -1,0 +1,429 @@
+{
+  "metadata":{
+    "branch" : "BT",
+    "semester" : 5,
+    "section": 1,
+    "last_updated" : "06-08-2015"
+  },
+  "subjects": [
+    {
+      "code": "BT-301",
+      "title": "Structural Biology"
+    },
+    {
+      "code": "BT-302",
+      "title": "Immunology and Immunotechnology"
+    },
+    {
+      "code": "BT-303",
+      "title": "Recombinant-DNA Technology"
+    },
+    {
+      "code": "BT-304",
+      "title": "Database Management Systems"
+    },
+    {
+      "code": "BT-305",
+      "title": "Chemical Engineering Principles"
+    },
+    {
+      "code": "BT-306",
+      "title": "Structural Biology Lab"
+    },
+    {
+      "code": "BT-307",
+      "title": "Immunology and Immunotech Lab"
+    },
+    {
+      "code": "BT-308",
+      "title": "Recombinant-DNA Technology I Lab"
+    },
+    {
+      "code": "BT-309",
+      "title": "Database Management Lab"
+    },
+    {
+      "code": "BT-310",
+      "title": "Term Paper and Seminar"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "SB",
+      "fullname": "Sonika Bhatnagar"
+    },
+    {
+      "codename": "SS",
+      "fullname": "Shilpa Sharma"
+    },
+    {
+      "codename": "RTB",
+      "fullname": "Rohit Beniwal"
+    },
+    {
+      "codename": "YK",
+      "fullname": "Yatendra Kumar"
+    },
+    {
+      "codename": "SB",
+      "fullname": "Sonika Bhatnagar"
+    },
+    {
+      "codename": "SS",
+      "fullname": "Shilpa Sharma"
+    },
+    {
+      "codename": "YK",
+      "fullname": "Yatender Kumar"
+    },
+    {
+      "codename": "AK",
+      "fullname": "Ajay Kataria"
+    },
+    {
+      "codename": "SoS",
+      "fullname": "Soumya Sasmal"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-301",
+        "professor": "SB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-303",
+        "professor": "YK",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-302",
+        "professor": "SS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-304",
+        "professor": "RTB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-305",
+        "professor": "SoS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-304",
+        "professor": "RTB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-306",
+        "professorFH": "SB",
+        "type": "lab",
+        "roomFH": "02/IV,311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-306",
+        "professorFH": "SB",
+        "type": "lab",
+        "roomFH": "02/IV,311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-306",
+        "professorFH": "SB",
+        "type": "lab",
+        "roomFH": "02/IV,311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-309",
+        "professorFH": "",
+        "type": "lab",
+        "roomFH": "133/V",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-309",
+        "professorFH": "",
+        "type": "lab",
+        "roomFH": "133/V",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-309",
+        "professorFH": "",
+        "type": "lab",
+        "roomFH": "133/V",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-301",
+        "professor": "SB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-307",
+        "professorFH": "SS",
+        "type": "lab",
+        "roomFH": "311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-307",
+        "professorFH": "SS",
+        "type": "lab",
+        "roomFH": "311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "BT-307",
+        "professorFH": "SS",
+        "type": "lab",
+        "roomFH": "311/IV",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-303",
+        "professor": "YK",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-302",
+        "professor": "SS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-304",
+        "professor": "RTB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": " break"
+      }
+    ],
+    [
+      {
+        "subject": "BT-305",
+        "professor": "SoS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-301",
+        "professor": "SB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-304",
+        "professor": "RTB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-303",
+        "professor": "YK",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-302",
+        "professor": "SS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-305",
+        "professor": "SoS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+
+      {
+        "subject": "BT-305",
+        "professor": "SoS",
+        "type": "theory",
+        "room": "" 
+      },
+      {
+        "subject": "BT-301",
+        "professor": "SB",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-308",
+        "professor": "YK and AK",
+        "type": "theory",
+        "room": "311/IV"
+      },
+      {
+        "subject": "BT-308",
+        "professor": "YK and AK",
+        "type": "theory",
+        "room": "311/IV"
+      },
+      {
+        "subject": "BT-308",
+        "professor": "YK and AK",
+        "type": "theory",
+        "room": "311/IV"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "BT-302",
+        "professor": "SS",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "BT-303",
+        "professor": "YK",
+        "type": "theory",
+        "room": ""
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

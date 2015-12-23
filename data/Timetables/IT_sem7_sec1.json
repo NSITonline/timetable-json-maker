@@ -1,0 +1,688 @@
+{
+
+  "metadata":{
+
+    "branch" : "IT",
+
+    "semester" : 7,
+
+    "section": 1,
+
+    "last_updated" : "8-1-2015"
+
+  },
+
+  "subjects": [
+
+    {
+
+      "code": "IT-401",
+
+      "title": "Internet and Web Engineering"
+
+    },
+
+    {
+
+      "code": "IT-402",
+
+      "title": "Distributed Systems and Computing"
+
+    },
+
+    {
+
+      "code": "IT-403",
+
+      "title": "Computer and Transistor Design"
+
+    },
+
+    {
+
+      "code": "IT-404",
+
+      "title": "Elective II"
+
+    },
+
+    {
+
+      "code": "IT-405",
+
+      "title": "Advances in digital System Design"
+
+    },
+
+    {
+
+      "code": "IT-406",
+
+      "title": "Internet and Web Engineering Lab"
+
+    },
+
+    {
+
+      "code": "IT-407",
+
+      "title": "Distributed Systems Lab"
+
+    },
+
+    {
+
+      "code": "IT-408",
+
+      "title": "Elective II Lab"
+
+    },
+
+     {
+
+      "code": "IT-409",
+
+      "title": "CTD Lab"
+
+    }
+
+,
+
+     {
+
+      "code": "IT-410",
+
+      "title": "Minor Project"
+
+    }
+
+  ],
+
+  "professors": [
+
+    {
+
+      "codename": "ANB",
+
+      "fullname": "Ankita Bansal"
+
+    },
+
+    {
+
+      "codename": "SKD",
+
+      "fullname": " S K Dhurandher"
+
+    },
+
+    {
+
+      "codename": "DVK",
+
+      "fullname": "Devender Kumar"
+
+    },
+
+       {
+
+      "codename": "VKM",
+
+      "fullname": "Vikas Kumar Maheshkar"
+
+    }
+
+,
+
+       {
+
+      "codename": "BPK",
+
+      "fullname": "Bhupender Kumar"
+
+    }
+
+,
+
+       {
+
+      "codename": "GAG",
+
+      "fullname": "Gargi"
+
+    }
+
+,
+
+       {
+
+      "codename": "DPS",
+
+      "fullname": "Deepak kumar Sharma"
+
+    }
+
+,
+
+       {
+
+      "codename": "ROG",
+
+      "fullname": "Rolly Gupta"
+
+    }
+
+  ],
+
+  "timetable": [
+
+    [
+
+      {
+
+        "subject": "break"    },
+
+      {
+
+        "subject": "IT-404",
+
+        "professor": "VKM",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+      {
+
+        "subject": "IC-405",
+
+        "professor": "BPK",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+{
+
+        "subject": "IT-402",
+
+        "professor": "SKD",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+      {
+
+        "subject": "break"    },
+
+      {
+
+        "subject": "IT-409,IT-108",
+
+        "type": "lab",
+
+        "professorFH": "DVK",
+
+        "roomFH": "201/V",
+
+        "professorSH": "VKM",
+
+        "roomSH": "202/V "
+
+      },  
+
+{
+
+        "subject": "IT-401",
+
+        "type": "theory",
+
+        "professor": "ANB",
+
+        "room": "306/V"
+
+      }
+,
+      {
+
+        "subject": "IC-403",
+
+        "professor": "DVK",
+
+        "type": "theory",
+
+        "room": "306/V"
+
+      },
+
+      {
+
+        "subject": "break"    },
+
+      {
+
+        "subject": "break"    },
+
+      {
+
+        "subject": "break"    }
+
+ ] , [ {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "IT-404",
+
+        "professor": "VKM",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+      {
+
+        "subject": "IT-401",
+
+        "professor": "ANB",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+      {
+
+        "subject": "IT-402",
+
+        "professor": "SKD",
+
+        "type": "theory",
+
+        "room": "102/8A"
+
+      },
+
+   {
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "IT-409,IT-408",
+
+        "type": "lab",
+
+        "professorFH": "ROG",
+
+        "roomFH": "201/V",
+
+        "professorSH": "ANB",
+
+        "roomSH": "202/V"
+
+      } , 
+
+   
+
+ {
+
+        "subject": "IT-411",
+
+        "professor": "",
+
+        "type": "theory",
+
+        "room": ""
+
+      },
+
+   {
+
+        "subject": "break"
+
+      }
+
+  ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+   {
+
+        "subject": "IT-403",
+
+        "professor": "DVK",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      } ,    
+
+   {
+
+        "subject": "IT-405",
+
+        "professor": "BPK",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      } ,    
+
+      {
+
+        "subject": "IT-406,IT-407",
+
+        "type": "lab",
+
+        "professorFH": "SKD",
+
+        "roomFH": "202/V",
+
+        "professorSH": "GAG",
+
+        "roomSH": "201/V"
+
+      } ,
+
+      {
+
+        "subject": "break"
+
+      },
+
+   {
+
+        "subject": "IT-401",
+
+        "professor": "ANB",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      } ,   
+
+{
+
+        "subject": "IT-402",
+
+        "professor": "SKD",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      } ,    
+
+ {
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "break"
+
+      }
+
+],
+
+    [
+
+      {
+
+        "subject": " break"
+
+      },
+
+       {
+
+        "subject": "IT-403",
+
+        "professor": "DVK",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      },
+
+      {
+
+        "subject": "IT-404",
+
+        "professor": "VKM",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      },
+
+{
+
+        "subject": "break"
+
+      },
+
+  {
+
+        "subject": "IT-406,IT-407",
+
+        "type": "lab",
+
+        "professorFH": "ANB",
+
+        "roomFH": "202/V",
+
+        "professorSH": "DPS",
+
+        "roomSH": "201/V"
+
+      } ,
+
+ {
+
+        "subject": "IT-402",
+
+        "type": "theory",
+
+        "professor": "SKD",
+
+        "room": "102/8A" } ,  
+
+{
+
+        "subject": "IT-405",
+
+        "type": "theory",
+
+        "professor": "BPK",
+
+        "room": "102/8A" } ,     
+
+   {
+
+        "subject": "break"
+
+      },
+
+   {
+
+        "subject": "break"
+
+      }
+
+  ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "IT-403",
+
+        "professor": "DVK",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      },
+
+       {
+
+        "subject": "IT-404",
+
+        "professor": "VKM",
+
+        "room": "102/8A",
+
+        "type": "theory"
+
+      },
+
+     {
+
+        "subject": "IT-405",
+
+        "type": "theory",
+
+        "professor": "BPK",
+
+        "room": "102/8A"
+    },
+
+      {
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "break"
+
+      },
+
+{
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      }    ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+
+    ]
+
+  ]
+
+}

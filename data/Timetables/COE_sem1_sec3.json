@@ -1,0 +1,443 @@
+{
+  "metadata":{
+    "branch" : "COE",
+    "semester" : 1,
+    "section": 3,
+    "last_updated" : "06-08-2015"
+  },
+  "subjects": [
+    {
+      "code": "COE-101",
+      "title": "Humanities"
+    },
+    {
+      "code": "COE-102",
+      "title": "Mathematics I"
+    },
+    {
+      "code": "COE-103",
+      "title": "Physics I"
+    },
+    {
+      "code": "COE-104",
+      "title": "Chemistry"
+    },
+    {
+      "code": "COE-105",
+      "title": "Manufacturing Processes"
+    },
+    {
+      "code": "COE-106",
+      "title": "Engineering Drawing I"
+    },
+    {
+      "code": "COE-107",
+      "title": "Physics I"
+    },
+    {
+      "code": "COE-108",
+      "title": "Chemistry"
+    },
+    {
+      "code": "COE-109",
+      "title": "Workshop I"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "GF",
+      "fullname": "Guest Faculty"
+    },
+    {
+      "codename": "SN",
+      "fullname": "Sonu Mehla"
+    },
+    {
+      "codename": "RMD",
+      "fullname": "R Mehendiratta"
+    },
+    {
+      "codename": "SC",
+      "fullname": "S Chopra"
+    },
+    {
+      "codename": "SS",
+      "fullname": "Soumya Sanyal"
+    },
+    {
+      "codename": "SRT",
+      "fullname": "Sandeep Rathee"
+    },
+    {
+      "codename": "ARM",
+      "fullname": "Arvind Meena"
+    },
+    {
+      "codename": "DN",
+      "fullname": "Dayanand"
+    },
+    {
+      "codename": "NMG",
+      "fullname": "Namrata Gangil"
+    },
+    {
+      "codename": "SSM",
+      "fullname": "Shankar Subramaniam"
+    },
+    {
+      "codename": "AS",
+      "fullname": "Anjana Sarkar"
+    },
+    {
+      "codename": "ST",
+      "fullname": "Sanjeev Thakur"
+    },
+    {
+      "codename": "SKC",
+      "fullname": "SK Chak"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-105",
+        "professor": "SRT",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-109",
+        "professorFH": "SKC",
+        "type": "lab",
+        "roomFH": "Workshop",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "COE-109",
+        "professorFH": "SKC",
+        "type": "lab",
+        "roomFH": "Workshop",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "COE-109",
+        "professorFH": "SKC",
+        "type":"lab",
+        "roomFH":"Workshop",
+        "professorSH": "",
+        "roomSH": ""
+      }
+    ],
+    [
+      {
+        "subject": "COE-103",
+        "professor": "RMD",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-102",
+        "professor": "SM",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-103",
+        "professor": "RMD",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-104",
+        "professor": "SS",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-107",
+        "type": "lab",
+        "professorFH": "DN",
+        "roomFH": "218/VI",
+        "professorSH": "SSM",
+        "roomSH": "219/VI"
+      },
+      {
+        "subject": "COE-107",
+        "type": "lab",
+        "professorFH": "DN",
+        "roomFH": "218/VI",
+        "professorSH": "SSM",
+        "roomSH": "219/VI"
+      },
+      {
+        "subject": " Lunchbreak"
+      },
+      {
+        "subject": "COE-102",
+        "professor": "SM",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-104",
+        "professor": "SS",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-105",
+        "professor": "SRT",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": " break"
+      },
+    ],
+    [
+      {
+        "subject": "COE-103",
+        "professor": "SC",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-104",
+        "professor": "JJ",
+        "type": "theory",
+        "room": "13/V" 
+      },
+      {
+        "subject": "COE-103",
+        "professor": "SC",
+        "type": "theory",
+        "room": "13/V", 
+      },
+      {
+        "subject": "COE-105",
+        "professor": "SRT",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-102",
+        "professor": "SM",
+        "type": "theory",
+        "room": "14/V"
+      },
+      {
+        "subject": "COE-108",
+        "type": "lab",
+        "professorFH": "AS",
+        "roomFH": "320/VI",
+        "professorSH": "ST",
+        "roomSH": "320/VI"
+      },
+      {
+        "subject": "COE-108",
+        "type": "lab",
+        "professorFH": "AS",
+        "roomFH": "320/VI",
+        "professorSH": "ST",
+        "roomSH": "320/VI"
+      },
+      {
+        "subject": "COE-108",
+        "type": "lab",
+        "professorFH": "AS",
+        "roomFH": "320/VI",
+        "professorSH": "ST",
+        "roomSH": "320/VI"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+
+      {
+        "subject": "COE-104",
+        "professor": "SS",
+        "type": "theory",
+        "room": "13/V" 
+      },
+      {
+        "subject": "COE-105",
+        "professor": "SRT",
+        "type": "theory",
+        "room": "13/V"
+      },
+      {
+        "subject": "COE-106",
+        "professorFH": "AM and NMG",
+        "type": "lab",
+        "roomFH": "233/VI",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "COE-106",
+        "professorFH": "AM and NMG",
+        "type": "lab",
+        "roomFH": "233/VI",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "COE-106",
+        "professorFH": "AM and NMG",
+        "type": "lab",
+        "roomFH": "233/VI",
+        "professorSH": "",
+        "roomSH": ""
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "14/V"
+      },
+      {
+        "subject": "COE-102",
+        "professor": "SM",
+        "type": "theory",
+        "room": "14/V"
+      },
+      {
+        "subject": "COE-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "14/V"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

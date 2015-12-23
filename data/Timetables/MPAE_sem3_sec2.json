@@ -1,0 +1,939 @@
+{
+
+  "metadata":{
+
+    "branch" : "MPAE",
+
+    "semester" : 3,
+
+    "section": 2,
+
+    "last_updated" : "8-1-2015"
+
+  },
+
+  "subjects": [
+
+    {
+
+      "code": "MA-201",
+
+      "title": "Machine Drawing & Graphics"
+
+    },
+
+    {
+
+      "code": "MA-202",
+
+      "title": "Manufacturing Processes-I"
+
+    },
+
+    {
+
+      "code": "MA-203",
+
+      "title": "Electro Mechanics"
+
+    },
+
+    {
+
+      "code": "MA-204",
+
+      "title": "Analog & Digital Electronics"
+
+    },
+
+    {
+
+      "code": "MA-205",
+
+      "title": "Technology & Society"
+
+    },
+
+    {
+
+      "code": "MA-206",
+
+      "title": "Machine Drawing & Graphics Lab"
+
+    },
+
+    {
+
+      "code": "MA-207",
+
+      "title": "Science of Materials & Manufacturing Processes Lab"
+
+    },
+
+    {
+
+      "code": "MA-208",
+
+      "title": "Electro Mechanics Lab"
+
+    },
+
+    {
+
+      "code": "MA-209",
+
+      "title": "Analog & Digital Electronics Lab"
+
+    },
+
+    {
+
+      "code": "MA-210",
+
+      "title": "Programming-I"
+
+    }
+
+  ],
+
+  "professors": [
+
+    {
+
+      "codename": "AA",
+
+      "fullname": "Apoorva Aggarwal"
+
+    },
+
+    {
+
+      "codename": "JKS",
+
+      "fullname": "JK Singh"
+
+    },
+
+    {
+
+      "codename": "JKM",
+
+      "fullname": "JK Mishra"
+
+    },
+
+    {
+
+      "codename": "NKS",
+
+      "fullname": "Nikeil Singhal"
+
+    },
+
+    {
+
+      "codename": "BA",
+
+      "fullname": "Bhawana Agarwal"
+
+    },
+
+    {
+
+      "codename": "SHM",
+
+      "fullname": "Shailesh Misera"
+
+    },
+
+    {
+
+      "codename": "RSP",
+
+      "fullname": "RS Parmar"
+
+    },
+
+    {
+
+      "codename": "PRK",
+
+      "fullname": "Pradeep Khanna"
+
+    },
+
+    {
+
+      "codename": "PRB",
+
+      "fullname": "Pramendra Bajpai"
+
+    },
+
+    {
+
+      "codename": "ANR",
+
+      "fullname": "Andriya Narsimhulu"
+
+    },
+
+    {
+
+      "codename": "MK",
+
+      "fullname": "Manish Kumar"
+
+    },
+
+    {
+
+      "codename": "PKB",
+
+      "fullname": "PK Bhuyan"
+
+    }
+
+  ],
+
+  "timetable": [
+
+    [
+
+      {
+
+        "subject": "MA-205",
+
+        "professor": "PKB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-203",
+
+        "professor": "TRK",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-202",
+
+        "professor": "RSP",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-202",
+
+        "professor": "PRK",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "lunchbreak"
+
+      },
+
+      {
+
+        "subject": "MA-206",
+
+        "type": "lab",
+
+        "professorFH": "PRB+ANR",
+        "professorSH": "PRB+ANR",
+
+        "roomFH": "232/VI",
+        "roomSH": "232/VI"
+
+      },  
+
+      {
+
+        "subject": "MA-206",
+
+        "type": "lab",
+
+        "professorFH": "PRB+ANR",
+        "professorSH": "PRB+ANR",
+        "roomFH": "232/VI",
+
+        "roomSH": "232/VI"
+
+      },
+
+      {
+
+        "subject": "MA-204",
+
+        "professor": "AA",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+     {
+
+        "subject": "break"
+
+      }
+,
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+    ],
+
+    [
+
+      {
+
+        "subject": "MA-201",
+
+        "professor": "PRB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-209,MA-210",
+
+        "type": "lab",
+
+        "professorFH": "SHM",
+
+        "roomFH": "12/IV",
+
+        "professorSH": "JKM",
+
+        "roomSH": "319/VI"
+
+      },
+
+      {
+
+        "subject": "MA-209,MA-210",
+
+        "type": "lab",
+
+        "professorFH": "SHM",
+
+        "roomFH": "12/IV",
+
+        "professorSH": "JKM",
+
+        "roomSH": "319/VI"
+
+      },
+
+      {
+
+        "subject": "MA-207,MA-207",
+
+        "type": "lab",
+
+        "professorFH": "AK",
+
+        "roomFH": "Workshop",
+
+        "professorSH": "PRK",
+
+        "roomSH": "Workshop"
+
+      },
+
+      {
+
+        "subject": "MA-207,MA-207",
+
+        "type": "lab",
+
+        "professorFH": "AK",
+
+        "roomFH": "Workshop",
+
+        "professorSH": "PRK",
+
+        "roomSH": "Workshop"
+
+      },
+
+      {
+
+        "subject": "lunchbreak"
+
+      },
+
+      {
+
+        "subject": "MA-204",
+
+        "professor": "AA",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+
+    ],
+
+    [
+
+      {
+
+        "subject": "MA-203",
+
+        "professor": "TRF",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-204",
+
+        "professor": "AA",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-205",
+
+        "professor": "PKB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-202",
+
+        "professor": "RSP",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-203",
+
+        "professor": "TRF",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "lunchbreak"
+
+      },
+
+      {
+
+        "subject": "MA-205",
+
+        "professor": "PKB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-206",
+
+        "professorFH": "MK+ANR",
+
+        "professorSH": "MK+ANR",
+        "type": "lab",
+
+        "roomFH": "233/VI",
+        "roomSH": "233/VI"
+
+      },
+
+      {
+
+        "subject": "MA-206",
+
+        "professorFH": "MK+ANR",
+        "professorSH": "MK+ANR",
+
+        "type": "lab",
+
+        "roomSH": "233/VI",
+        "roomFH": "233/VI"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+
+    ],
+
+    [
+
+      {
+
+        "subject": " break"
+
+      },
+
+      {
+
+        "subject": "MA-208",
+
+        "professorFH": "NKS",
+        "professorSH": "NKS",
+
+        "type": "lab",
+
+        "roomSH": "8/VI",
+        "roomFH": "8/VI"
+
+      },
+
+      {
+
+        "subject": "MA-208",
+
+        "professorFH": "NKS",
+        "professorSH": "NKS",
+
+        "type": "lab",
+
+        "roomFH": "8/VI",
+        "roomSH": "8/VI"
+
+      },
+
+      {
+
+        "subject": "MA-210,MA-209",
+
+        "type": "lab",
+
+        "professorFH": "JKS",
+
+        "roomFH": "318/VI",
+
+        "professorSH": "BA",
+
+        "roomSH": "128/IV"
+
+      },
+
+      {
+
+        "subject": "MA-210,MA-209",
+
+        "type": "lab",
+
+        "professorFH": "JKS",
+
+        "roomFH": "318/VI",
+
+        "professorSH": "BA",
+
+        "roomSH": "128/IV"
+
+      },
+
+      {
+
+        "subject": "lunchbreak"
+
+      },
+
+      {
+
+        "subject": "MA-202",
+
+        "professor": "PRK",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      }
+,
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+    ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "MA-204",
+
+        "professor": "AA",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-205",
+
+        "professor": "PKB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-201",
+
+        "professor": "PRB",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "MA-203",
+
+        "professor": "TRF",
+
+        "type": "theory",
+
+        "room": "127/VI"
+
+      },
+
+      {
+
+        "subject": "lunchbreak"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      }
+
+    ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+,
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+    ],
+
+    [
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      },
+
+      {
+
+        "subject": "break"
+
+      },      
+
+      {
+
+        "subject": "break"
+
+      }
+
+    ]
+
+  ]
+
+}

@@ -1,0 +1,400 @@
+{
+  "metadata":{
+    "branch" : "COE",
+    "semester" : 5,
+    "section": 1,
+    "last_updated" : "04-08-2015"
+  },
+  "subjects": [
+    {
+      "code": "COE-301",
+      "title": "Principles of Computer Graphics"
+    },
+    {
+      "code": "COE-302",
+      "title": "Descrate Maths and Design of Alg"
+    },
+    {
+      "code": "COE-303",
+      "title": "Computer System Org"
+    },
+    {
+      "code": "COE-304",
+      "title": ""
+    },
+    {
+      "code": "COE-305",
+      "title": "Industrial Org. and Mana. Eco"
+    },
+    {
+      "code": "COE-306",
+      "title": "Computer Systems Org"
+    },
+    {
+      "code": "COE-307",
+      "title": "Linear Integrated Circuits"
+    },
+    {
+      "code": "COE-308",
+      "title": "Principles of Computer Graphics"
+    },
+    {
+      "code": "COE-309",
+      "title": "Programming III"
+    }
+  ],
+  "professors": [
+    {
+      "codename": "ADG",
+      "fullname": "Anand Gupta"
+    },
+    {
+      "codename": "SNR",
+      "fullname": "Sunny Rai"
+    },
+    {
+      "codename": "PNS",
+      "fullname": "Parneeta Sidhu"
+    },
+    {
+      "codename": "SHG",
+      "fullname": "Shweta Gautam"
+    },
+    {
+      "codename": "PNK",
+      "fullname": "P.N Khaturia"
+    },
+    {
+      "codename": "RJK",
+      "fullname": "Rajeev Kumar"
+    },
+    {
+      "codename": "SG",
+      "fullname": "Shweta Gautam"
+    },
+    {
+      "codename": "OPS",
+      "fullname": "OP Sharma"
+    },
+    {
+      "codename": "ADG",
+      "fullname": "Anand Gupta"
+    },
+    {
+      "codename": "STC",
+      "fullname": "Satish Chand"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "ADG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-303",
+        "professor": "PNS",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-307,COE-308",
+        "type": "lab",
+        "professorFH": "SG",
+        "roomFH": "218/IV",
+        "professorSH": "ADG",
+        "roomSH": "103/V"
+      },  
+      {
+        "subject": "COE-306,COE-309",
+        "type": "lab",
+        "professorFH": "RJK",
+        "roomFH": "012/V",
+        "professorSH": "STC",
+        "roomSH": "119/V"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-309,COE-306",
+        "type": "lab",
+        "professorFH": "STC",
+        "roomFH": "103/V",
+        "professorSH": "RJK",
+        "roomSH": "012/V"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-303",
+        "professor": "PNS",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-305",
+        "professor": "PNK",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "SNR",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-305",
+        "professor": "PNK",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "COE-308,COE-307",
+        "type": "lab",
+        "professorFH": "ADG",
+        "roomFH": "103/V",
+        "professorSH": "OPS",
+        "roomSH": "216/V"
+      },
+      {
+        "subject": "COE-304",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "ADG",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "SNR",
+        "type": "theory",
+        "room": "311/V"  
+      },
+      {
+        "subject": "COE-303",
+        "professor": "PNS",
+        "room": "311/V",
+        "type": "theory"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": " break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": " break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "ADG",
+        "type": "theory",
+        "room": "311/V" 
+      },
+      {
+        "subject": "COE-305",
+        "professor": "PNK",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "COE-302",
+        "professor": "SNR",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "COE-305",
+        "professor": "PNK",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": " break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "COE-302",
+        "professor": "SNR",
+        "type": "theory",
+        "room": "311/V"
+      },
+      {
+        "subject": "COE-30",
+        "professor": "PNS",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "COE-302",
+        "professor": "SHG",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "Lunchbreak"
+      },
+      {
+        "subject": "COE-301",
+        "professor": "ADG",
+        "type": "theory",
+        "room": "311/V"   
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}

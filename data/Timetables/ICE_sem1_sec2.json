@@ -1,0 +1,435 @@
+{
+  "metadata":{
+    "branch" : "ICE",
+    "semester" : 1,
+    "section": 2,
+    "last_updated" : "4-8-2015"
+  },
+  "subjects": [
+    {
+      "code": "IC-101",
+      "title": "English"
+    },
+    {
+      "code": "IC-102",
+      "title": "Maths"
+    },
+    {
+      "code": "IC-103",
+      "title": "Physics"
+    },
+    {
+      "code": "IC-104",
+      "title": "Chemistry"
+    },
+    {
+      "code": "IC-105",
+      "title": "Manufacturing Processes"
+    },
+    {
+      "code": "IC-106",
+      "title": "Engineering Drawing"
+    },
+    {
+      "code": "IC-107",
+      "title": "Physics Lab"
+    },
+    {
+      "code": "IC-108",
+      "title": "Chemistry Lab"
+    },
+    {
+      "code": "IC-109",
+      "title": "Workshop"
+    }
+    
+  ],
+  "professors": [
+    {
+      "codename": "VG",
+      "fullname": "Vijay Gupta"
+    },
+    {
+      "codename": "NM",
+      "fullname": "Nalini Mittal"
+    },
+    {
+      "codename": "NRK",
+      "fullname": "Narendra Kumar"
+    },
+    {
+      "codename": "RM",
+      "fullname": "Rajeev Mahajan"
+    },
+    {
+      "codename": "AMK+YS",
+      "fullname": "AM Khan + Yogeshwar Sharma"
+    },
+   
+  {
+      "codename": "PRK",
+      "fullname": "Pradeep Khanna "
+    },
+    {
+      "codename": "GF",
+      "fullname": "Guest Faculty"
+    }
+  ],
+  "timetable": [
+    [
+      {
+        "subject": "IC-104",
+        "professor": "NM",
+        "type": "theory",
+        "room": "28/V"
+      },
+      {
+        "subject": "IC-105",
+        "professor": "NRK",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-103",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-102",
+        "professor": "VG",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-103",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  
+	  {
+        "subject": "lunchbreak"
+      },
+      
+      {
+        "subject": "IC-108",
+        "type": "lab",
+        "professorFH": "AMK+YS ",
+        "roomFH": "320/VI",
+        "professorSH": "AMK+YS ",
+        "roomSH": "320/VI"
+      },  
+      {
+        "subject": "IC-108",
+        "type": "lab",
+        "professorFH": "AMK+YS ",
+        "roomFH": "320/VI",
+        "professorSH": "AMK+YS ",
+        "roomSH": "320/VI"
+      },
+	  {
+        "subject": "IC-108",
+        "type": "lab",
+        "professorFH": "AMK+YS ",
+        "roomFH": "320/VI",
+        "professorSH": "AMK+YS ",
+        "roomSH": "320/VI"
+      },
+      
+      {
+        "subject": "break"
+      }
+    ],
+    [ {
+        "subject": "IC-107",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": "218/VI",
+        "professorSH": " ",
+        "roomSH": "219/VI"
+      },
+	  {
+        "subject": "IC-107",
+        "type": "lab",
+        "professorFH": " ",
+        "roomFH": "218/VI",
+        "professorSH": " ",
+        "roomSH": "219/VI"
+      },
+      {
+        "subject": "IC-105",
+        "professor": "NRK",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-102",
+        "professor": "VG",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "IC-106",
+        "type": "lab",
+        "professorFH": "RM",
+        "roomFH": "232/VI",
+        "professorSH": "RM",
+        "roomSH": "232/VI"
+      },
+	   {
+        "subject": "IC-106",
+        "type": "lab",
+        "professorFH": "RM",
+        "roomFH": "232/VI",
+        "professorSH": "RM",
+        "roomSH": "232/VI"
+      },
+	   {
+        "subject": "IC-106",
+        "type": "lab",
+        "professorFH": "RM",
+        "roomFH": "232/VI",
+        "professorSH": "RM",
+        "roomSH": "232/VI"
+      },
+      
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "IC-103",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+      {
+        "subject": "IC-104",
+        "professor": "NM",
+        "type": "theory",
+        "room": "28/V"
+      },
+      {
+        "subject": "IC-103",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-109",
+        "type": "lab",
+        "professorFH": "PRK",
+        "roomFH": "Workshop",
+        "professorSH": "PRK",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-109",
+        "type": "lab",
+        "professorFH": "PRK",
+        "roomFH": "Workshop",
+        "professorSH": "PRK",
+        "roomSH": " "
+      },
+	  {
+        "subject": "IC-109",
+        "type": "lab",
+        "professorFH": "PRK",
+        "roomFH": "Workshop",
+        "professorSH": "PRK",
+        "roomSH": " "
+      },
+      
+      {
+        "subject": "lunchbreak"
+      },
+      
+      {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+	  
+      {
+        "subject": "break"
+      }
+    ],
+    [ {
+        "subject": "IC-102",
+        "professor": "VG",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-101",
+        "professor": "GF",
+        "room": "28/V",
+        "type": "theory"
+      },
+	  {
+        "subject": "IC-105",
+        "professor": "NRK",
+        "room": "28/V",
+        "type": "theory"
+      },
+	  {
+        "subject": "IC-101",
+        "professor": "GF",
+        "room": "28/V",
+        "type": "theory"
+      },
+      
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "IC-104",
+        "professor": "NM",
+        "room": "28/V",
+        "type": "theory"
+      },
+      {
+        "subject": "IC-104",
+        "professor": "NM",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "IC-104",
+        "professor": "NM",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-105",
+        "professor": "NRK",
+        "type": "theory",
+        "room": "28/V"
+      },
+	  {
+        "subject": "IC-101",
+        "professor": "GF",
+        "type": "theory",
+        "room": "28/V"
+      },
+      
+      
+      {
+        "subject": "lunchbreak"
+      },
+      {
+        "subject": "IC-102",
+        "professor": "VG",
+        "room": "28/V",
+        "type": "theory"
+      },
+	  {
+        "subject": "IC-102",
+        "professor": "VG",
+        "room": "28/V",
+        "type": "theory"
+      },
+      {
+        "subject": "break"
+      },
+	  {
+        "subject": "break"
+      },
+     
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ],
+    [
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },
+      {
+        "subject": "break"
+      },      
+      {
+        "subject": "break"
+      }
+    ]
+  ]
+}
