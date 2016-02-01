@@ -1,5 +1,5 @@
 # NSITonline | Timetable Generator
-A simple web based application to save timetables for different sections in our college, [NSIT](http://www.nsit.ac.in) to a MySQL database and then retrieve the same
+A simple web based application to save timetables for different sections in our college, [NSIT](http://www.nsit.ac.in) to a MySQL database and then retrieve the same.
 
 APIs are written in PHP whereas front end uses JQuery and AJAX
 
@@ -8,6 +8,11 @@ APIs are written in PHP whereas front end uses JQuery and AJAX
 ![](/img/screenshots/screencapture-localhost-timetable-json-maker-1451165825616.png?raw=true )
 
 ![](/img/screenshots/screencapture-localhost-timetable-json-maker-add-timetable-php-1451165923192.png?raw=true )
+
+
+## Android Application Screenshots
+
+![](https://github.com/Swati4star/NSIT-App-v2/blob/master/screenshots/5.png)
 
 ##Other Links
 
