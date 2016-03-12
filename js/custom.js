@@ -115,34 +115,36 @@ $(document).ready(function(){
 
 			var send_flag = true,
 				row_count = 1,
+				day_count = 0,
 				temp_row = [];
 
 			$('td').each(function(){
-				var select_tag = $(this).children('select'),
-					code = select_tag.data('field-name').split('/'),
-					value = select_tag.val().toLowerCase(),
-					temp_object = {};
+				var selected_div = $(this),
+					value = selected_div.children('select').val().toLowerCase(),
+					temp_object = {},
 
-				value = value.replace(/(<([^>]+)>)/ig,"");
+					f$ = function(selector) {
+			            return selected_div.find("input[placeholder='" + selector + "']").val();
+			        };
 
-				temp_object.value = value;
+				temp_object.value = value.replace(/(<([^>]+)>)/ig,"");
 
 				switch(value){
 					case "theory" : 
-						temp_object.subject = $("input[placeholder='subject']").val();
-						temp_object.prof = $("input[placeholder='professor code']").val();
-						temp_object.room = $("input[placeholder='room']").val();
+						temp_object.subject = f$('subject');
+						temp_object.prof 	= f$('professor code');
+						temp_object.room 	= f$('room');;
 
 						if(temp_object.room == '' || temp_object.prof == '' || temp_object.subject == '')
 							send_flag = false;
-						
+
 						break;
 					case "lab" :
-						temp_object.subject = $("input[placeholder='subject']").val();
-						temp_object.prof_FH = $("input[placeholder='professor FH']").val();
-						temp_object.room_FH = $("input[placeholder='room FH']").val();
-						temp_object.prof_SH = $("input[placeholder='professor SH']").val();
-						temp_object.room_SH = $("input[placeholder='room SH']").val();
+						temp_object.subject = f$('subject');
+						temp_object.prof_FH = f$('professor FH');
+						temp_object.room_FH = f$('room FH');
+						temp_object.prof_SH = f$('professor SH');
+						temp_object.room_SH = f$('room SH');
 						
 						if(temp_object.subject == '' || temp_object.prof_FH == '' || temp_object.room_FH == '' || temp_object.prof_SH == '' || temp_object.room_SH == '')
 							send_flag = false;
@@ -156,6 +158,7 @@ $(document).ready(function(){
 				if(row_count % 10 == 0){
 					sendJSON.data.push(temp_row);
 					temp_row = [];
+					day_count++;
 				}
 
 				row_count++;
@@ -164,7 +167,7 @@ $(document).ready(function(){
 			if(!send_flag){
 				alert("Fields not complete");
 			} else {
-				// console.log(JSON.stringify(sendJSON));
+				console.log(JSON.stringify(sendJSON));
 				sendData(sendJSON);
 			}
 		}
