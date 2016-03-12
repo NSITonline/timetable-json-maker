@@ -3,7 +3,7 @@
  * @Author: prabhakar
  * @Date:   2016-03-26 00:14:52
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-26 00:35:59
+ * @Last Modified time: 2016-03-26 01:05:53
  */
 
 
@@ -129,7 +129,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 
 <hr>
 
-<script src="js/jquery.js"></script>
+<script src="js/jquery-2.2.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/select2.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>

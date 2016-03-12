@@ -3,7 +3,7 @@
  * @Author: prabhakar
  * @Date:   2016-03-25 23:51:01
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-26 00:18:43
+ * @Last Modified time: 2016-03-26 01:05:45
  */
 
 require_once 'inc/func.inc.php';
@@ -57,7 +57,7 @@ if(isset($error)){
     </div>
 
 
-<script src="js/jquery.js"></script>
+<script src="js/jquery-2.2.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 </body>
