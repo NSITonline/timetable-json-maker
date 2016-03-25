@@ -15,4 +15,4 @@
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link rel="shortcut icon" href="">
+	<link rel="shortcut icon" href="favicon.ico">
