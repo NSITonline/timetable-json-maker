@@ -3,7 +3,7 @@
  * @Author: prabhakar
  * @Date:   2016-03-26 00:14:52
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-26 00:15:28
+ * @Last Modified time: 2016-03-26 00:35:59
  */
 
 
@@ -76,6 +76,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 			</div>
 		</form>
 	</div>
+	<div class="row" id="submit_message"></div>
 </div>
 <hr>
 <div class="col-md-12">

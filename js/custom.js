@@ -12,6 +12,16 @@ function addFields(flag, div){
 	}
 }
 
+function showMessage(status, message){
+	var html_code = '<div class="alert alert-'
+		+ status
+		+ ' alert-dismissible fade in" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>'
+		+ message
+		+ '</div>';
+
+	$("#submit_message").html(html_code);
+}
+
 function sendData(json){
 
 	var table = $('body').find('table');
@@ -22,9 +32,17 @@ function sendData(json){
         },
         url : config_api_url + "save-response.php",
         success: function(data) {                    
-            alert("success");
+            // alert("success");
 			
+			var response = jQuery.parseJSON(data);
+			
+			if(response.success){
+				showMessage("success", "Your response has been successfully saved, good job. <strong>Go ahead have a cookie!</strong>");
+			} else {
+				showMessage("danger", "There was some technical high level error, try again after sometime.<br><strong>If the problem continues, ask some senior to look into the same</strong>");
+			}
 			console.log(JSON.stringify(data));
+
             
             // console.log(data);
             // location.reload();
@@ -38,6 +56,13 @@ function sendData(json){
             $("#submit-button").removeAttr("disabled");
         }
     });
+}
+
+function stripHTML(dirtyString) {
+	var container = document.createElement('div');
+	var text = document.createTextNode(dirtyString);
+	container.appendChild(text);
+	return container.innerHTML; // innerHTML will be a xss safe string
 }
 
 $(document).ready(function(){
@@ -98,9 +123,9 @@ $(document).ready(function(){
 					value = select_tag.val().toLowerCase(),
 					temp_object = {};
 
+				value = value.replace(/(<([^>]+)>)/ig,"");
+
 				temp_object.value = value;
-				// temp_object.day = parseInt(code[0]);
-				// temp_object.timeslot = parseInt(code[1]) + 1;
 
 				switch(value){
 					case "theory" : 
