@@ -1,27 +1,33 @@
 <?php
-	require_once 'inc/login.function.inc.php';
-	// require_once 'inc/connection.inc.php';
-	require_once 'inc/constant.inc.php';
-	require_once 'inc/function.public.inc.php';
-
-	$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
-
-	if(!loggedIn())
-		header('Location: index.php');
+/**
+ * @Author: prabhakar
+ * @Date:   2016-03-26 00:14:52
+ * @Last Modified by:   Prabhakar Gupta
+ * @Last Modified time: 2016-03-26 00:15:28
+ */
 
 
-	include 'inc/public/meta.inc.php';
+require_once 'inc/func.inc.php';
+
+$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
+$DAY_OF_WEEK = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
+
+if(!loggedIn())
+	header('Location: index.php');
+
+
+include 'inc/public/meta.inc.php';
+
 ?>
-
-    <script type="text/javascript">
+	<script type="text/javascript">
 <?php
 
-	$current_url = explode('/', returnCurrentURL());
-	unset($current_url[count($current_url) - 1 ]);
-	echo "\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL;
+$current_url = explode('/', returnCurrentURL());
+unset($current_url[count($current_url) - 1 ]);
+echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL;
 
 ?>
-    </script>
+	</script>
 </head>
 <body>
 <?php

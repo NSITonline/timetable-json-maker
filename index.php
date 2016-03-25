@@ -1,37 +1,45 @@
 <?php
-	require_once 'inc/login.function.inc.php';
-	// require_once 'inc/connection.inc.php';
+/**
+ * @Author: prabhakar
+ * @Date:   2016-03-25 23:51:01
+ * @Last Modified by:   Prabhakar Gupta
+ * @Last Modified time: 2016-03-26 00:18:43
+ */
 
-	if(loggedin())
-		header('Location: add-timetable.php');
+require_once 'inc/func.inc.php';
 
-	if(isset($_POST['pass'])){
-		$password_entered = strtolower(trim(str_replace(' ','',$_POST['pass'])));
-		if($password_entered == 'xxxx'){
-			$_SESSION['pass'] = $password_entered;
 
-			header("Location: add-timetable.php");
-		} else {
-			$error = 0;
-		}
+if(loggedin())
+	header('Location: add-timetable.php');
+
+
+if(isset($_POST['pass'])){
+	$password_entered = strtolower(trim(str_replace(' ','',$_POST['pass'])));
+	if($password_entered == 'xxxx'){
+		$_SESSION['pass'] = $password_entered;
+
+		header("Location: add-timetable.php");
+	} else {
+		$error = 0;
 	}
+}
 
-	include 'inc/public/meta.inc.php';
+include 'inc/public/meta.inc.php';
 
 ?>
 </head>
 <body>
 <?php
 
-	include 'inc/public/header.inc.php';
+include 'inc/public/header.inc.php';
 
 ?>
 	<div class="container" style="padding-top:50px">
 <?php 
 	
-	if(isset($error)){
-		echo '<div class="alert alert-danger alert-dismissible" style="margin:10px 10px -10px 10px ;" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>YOU ARE NOT AUTHORIZED, GO BACK</div>';
-	}
+if(isset($error)){
+	echo '<div class="alert alert-danger alert-dismissible" style="margin:10px 10px -10px 10px ;" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>YOU ARE NOT AUTHORIZED, GO BACK</div>';
+}
 
 ?>	
         <div class="row">

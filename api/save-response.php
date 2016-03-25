@@ -3,13 +3,24 @@
  * @Author: prabhakar
  * @Date:   2016-03-25 23:43:27
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-25 23:48:07
+ * @Last Modified time: 2016-03-26 00:05:34
  */
 
-require_once '../inc/function.inc.php';
+
+/**
+ * function to get time string as required 
+ * in API response from timestamp
+ * @param  timestamp 	$time
+ * @return string
+ */
+function getTimeStamp($time){
+	return date("Y-m-d H:i:s", $time);
+}
+
 
 $url = "../res/";
 $current_timestamp = getTimeStamp(time());
+
 
 if(isset($_POST['json'])){
 	$response = json_decode($_POST['json'], true);
