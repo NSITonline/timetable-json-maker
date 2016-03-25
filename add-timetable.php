@@ -1,6 +1,6 @@
 <?php
 	require_once 'inc/login.function.inc.php';
-	require_once 'inc/connection.inc.php';
+	// require_once 'inc/connection.inc.php';
 	require_once 'inc/constant.inc.php';
 	require_once 'inc/function.public.inc.php';
 

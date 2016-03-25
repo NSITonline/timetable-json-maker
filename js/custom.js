@@ -13,6 +13,8 @@ function addFields(flag, div){
 }
 
 function sendData(json){
+	// console.log(JSON.stringify(json));
+
 	var table = $('body').find('table');
     $.ajax({
         type : 'POST',
@@ -22,13 +24,15 @@ function sendData(json){
         url : config_api_url + "save-response.php",
         success: function(data) {                    
             alert("success");
-            location.reload();
+            // location.reload();
         },
         beforeSend: function() {
             table.css({'opacity' : '0.4'});
+            $("#submit-button").attr("disabled", "disabled");
         },
         complete: function() {
             table.css({'opacity' : '1.0'});
+            $("#submit-button").removeAttr("disabled");
         }
     });
 }
@@ -81,7 +85,9 @@ $(document).ready(function(){
 			sendJSON.section = section;
 			sendJSON.data = [];
 
-			var send_flag = true;
+			var send_flag = true,
+				row_count = 1,
+				temp_row = [];
 
 			$('td').each(function(){
 				var select_tag = $(this).children('select'),
@@ -90,8 +96,8 @@ $(document).ready(function(){
 					temp_object = {};
 
 				temp_object.value = value;
-				temp_object.day = parseInt(code[0]);
-				temp_object.timeslot = parseInt(code[1]) + 1;
+				// temp_object.day = parseInt(code[0]);
+				// temp_object.timeslot = parseInt(code[1]) + 1;
 
 				switch(value){
 					case "theory" : 
@@ -117,7 +123,14 @@ $(document).ready(function(){
 					case "break" : case "lunch break" :
 						break;
 				}
-				sendJSON.data.push(temp_object);
+				temp_row.push(temp_object);
+				
+				if(row_count % 10 == 0){
+					sendJSON.data.push(temp_row);
+					temp_row = [];
+				}
+
+				row_count++;
 			});
 	
 			if(!send_flag){

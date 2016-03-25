@@ -1,6 +1,6 @@
 <?php
 	require_once 'inc/login.function.inc.php';
-	require_once 'inc/connection.inc.php';
+	// require_once 'inc/connection.inc.php';
 
 	if(loggedin())
 		header('Location: add-timetable.php');
