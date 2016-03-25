@@ -13,7 +13,6 @@ function addFields(flag, div){
 }
 
 function sendData(json){
-	// console.log(JSON.stringify(json));
 
 	var table = $('body').find('table');
     $.ajax({
@@ -24,6 +23,10 @@ function sendData(json){
         url : config_api_url + "save-response.php",
         success: function(data) {                    
             alert("success");
+			
+			console.log(JSON.stringify(data));
+            
+            // console.log(data);
             // location.reload();
         },
         beforeSend: function() {
