@@ -3,8 +3,11 @@
  * @Author: prabhakar
  * @Date:   2016-03-25 23:43:27
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-26 00:05:34
+ * @Last Modified time: 2016-03-26 12:07:35
  */
+
+
+date_default_timezone_set('Asia/Kolkata');
 
 
 /**
