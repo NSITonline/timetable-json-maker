@@ -1,8 +1,11 @@
+// branches in which there are only less than 3 (<3) sections
 var excluded_branches = [2,5,6,7];
 
+// checks if the "element" is present inside "array" or not 
 function isArray(array, element) {
     return array.indexOf(element) > -1;
 }
+
 
 function addFields(flag, div){
 	if(flag){
@@ -11,6 +14,7 @@ function addFields(flag, div){
 		div.html('<input class="form-control input-sm" placeholder="subject"><input class="form-control input-sm" placeholder="professor code"><input class="form-control input-sm" placeholder="room">');
 	}
 }
+
 
 function showMessage(status, message){
 	var html_code = '<div class="alert alert-'
@@ -22,8 +26,8 @@ function showMessage(status, message){
 	$("#submit_message").html(html_code);
 }
 
-function sendData(json){
 
+function sendData(json){
 	var table = $('body').find('table');
     $.ajax({
         type : 'POST',
@@ -32,21 +36,18 @@ function sendData(json){
         },
         url : config_api_url + "save-response.php",
         success: function(data) {                    
-            // alert("success");
-			
 			var response = jQuery.parseJSON(data);
-			
+
+			// API returns a "success" flag to check if the data was successfully saved or not
 			if(response.success){
 				showMessage("success", "Your response has been successfully saved, good job. <strong>Go ahead have a cookie!</strong>");
 			} else {
 				showMessage("danger", "There was some technical high level error, try again after sometime.<br><strong>If the problem continues, ask some senior to look into the same</strong>");
 			}
-			console.log(JSON.stringify(data));
-
-            
-            // console.log(data);
-            // location.reload();
         },
+
+        // add a blur effect while submitting
+        // just to be cool in front of non-technical people
         beforeSend: function() {
             table.css({'opacity' : '0.4'});
             $("#submit-button").attr("disabled", "disabled");
@@ -66,6 +67,9 @@ function stripHTML(dirtyString) {
 }
 
 $(document).ready(function(){
+	// when the user changes any slot type
+	// possible slot types are "theory", "lab" and "break" or "lunch break"
+	// "break" and "lunch break" serve same purpose except in the android app they are highlighted differently
 	$(".js-example-basic-single").change(function() {
 		var select_tag = $(this),
 			selected_div = select_tag.parent('td').children('div'),
@@ -91,6 +95,7 @@ $(document).ready(function(){
 		location.reload();
 	});
 
+	// when the user clicks on submit button
 	$("#submit-button").click(function(){
 		var error_flag = false,
 			table = $('body').find('table'),
@@ -99,12 +104,16 @@ $(document).ready(function(){
 			semester = parseInt($('#semester_select').val()),
 			section = parseInt($('#section_select').val());
 
+		// check if someone selected an "excluded_branch" and section 3
 		if(isArray(excluded_branches, branch) && section == 3)
 			error_flag = true;
 
+		// check if someone selected branch "BT" and section 2
+		// because BT has only 1 section
 		if(branch == 6 && (semester == 1 || section == 2))
 			error_flag = true;
-			
+		
+
 		if(error_flag){
 			alert("Incorrect entries");
 		} else {
@@ -118,6 +127,9 @@ $(document).ready(function(){
 				day_count = 0,
 				temp_row = [];
 
+			// iterates over all the periods
+			// it goes Monday 1st period to Monday 10th period, then Tuesday and so on
+			// each day is divided in 10 slots and total 7 days, so this loop goes 70 times
 			$('td').each(function(){
 				var selected_div = $(this),
 					value = selected_div.children('select').val().toLowerCase(),
@@ -129,7 +141,11 @@ $(document).ready(function(){
 
 				temp_object.value = value.replace(/(<([^>]+)>)/ig,"");
 
+				// temp_row represnts one day
+				// temp_object represtns one slot
+				
 				switch(value){
+					// there is only one prof and one room
 					case "theory" : 
 						temp_object.subject = f$('subject');
 						temp_object.prof 	= f$('professor code');
@@ -139,6 +155,9 @@ $(document).ready(function(){
 							send_flag = false;
 
 						break;
+
+					// there are 2 subjects, 2 profs and 2 rooms
+					// subject is to entered in the single field only as (subj1 + subj2)
 					case "lab" :
 						temp_object.subject = f$('subject');
 						temp_object.prof_FH = f$('professor FH');
@@ -150,11 +169,14 @@ $(document).ready(function(){
 							send_flag = false;
 						
 						break;
+
+					// simple things
 					case "break" : case "lunch break" :
 						break;
 				}
 				temp_row.push(temp_object);
 				
+				// checks if a day ended or not
 				if(row_count % 10 == 0){
 					sendJSON.data.push(temp_row);
 					temp_row = [];
@@ -164,10 +186,10 @@ $(document).ready(function(){
 				row_count++;
 			});
 	
+			// if there is some field which is left blank "send_flag" would be set to false 
 			if(!send_flag){
 				alert("Fields not complete");
 			} else {
-				console.log(JSON.stringify(sendJSON));
 				sendData(sendJSON);
 			}
 		}
