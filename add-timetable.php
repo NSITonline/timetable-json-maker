@@ -9,7 +9,7 @@
 
 require_once 'inc/func.inc.php';
 
-$field_type_string = "<option>Break</option><option>Lunch Break</option><option>Theory</option><option>Lab</option>";
+$field_type_string = "<option value='break'>Break</option><option value='lunch break'>Lunch Break</option><option value='theory'>Theory</option><option value='lab'>Lab</option>";
 $DAY_OF_WEEK = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
 
 if(!loggedIn())
@@ -28,6 +28,13 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 
 ?>
 	</script>
+<style type="text/css">
+	.empty {
+    background-color: #ffcccc;
+}
+
+</style>
+
 </head>
 <body>
 <?php
@@ -46,6 +53,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 			<div class="form-group">
 				<div class="col-md-4">
 					<select class="form-control" id="branch_select">
+						<option value="0">Select</option>
 						<option value="1">COE</option>
 						<option value="2">IT</option>
 						<option value="3">ECE</option>
@@ -56,7 +64,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 					</select>
 				</div>
 				<div class="col-md-4">
-					<select class="form-control" id="semester_select">
+					<select class="form-control" id="semester_select"><option value="0">Select</option>
 <?php
 	for($i=1; $i<=8; $i++){
 		echo '<option value="' . $i . '">' . romanic_number($i) . '</option>' . PHP_EOL;
@@ -65,7 +73,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 					</select>
 				</div>
 				<div class="col-md-4">
-					<select class="form-control" id="section_select">
+					<select class="form-control" id="section_select"><option value="0">Select</option>
 <?php
 	for($i=1; $i<=3; $i++){
 		echo '<option value="' . $i . '">' . romanic_number($i) . '</option>' . PHP_EOL;
