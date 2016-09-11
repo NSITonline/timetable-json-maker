@@ -3,7 +3,7 @@ var excluded_branches = [2,5,6,7];
 
 // checks if the "element" is present inside "array" or not 
 function isArray(array, element) {
-    return array.indexOf(element) > -1;
+	return array.indexOf(element) > -1;
 }
 
 
@@ -31,13 +31,13 @@ function showMessage(status, message){
 
 function sendData(json){
 	var table = $('body').find('table');
-    $.ajax({
-        type : 'POST',
-        data : {
-            json : JSON.stringify(json)
-        },
-        url : config_api_url + "save-response.php",
-        success: function(data) {                    
+	$.ajax({
+		type : 'POST',
+		data : {
+			json : JSON.stringify(json)
+		},
+		url : config_api_url + "save-response.php",
+		success: function(data) {                    
 			var response = jQuery.parseJSON(data);
 
 			// API returns a "success" flag to check if the data was successfully saved or not
@@ -46,19 +46,19 @@ function sendData(json){
 			} else {
 				showMessage("danger", "There was some technical high level error, try again after sometime.<br><strong>If the problem continues, ask some senior to look into the same</strong>");
 			}
-        },
+		},
 
-        // add a blur effect while submitting
-        // just to be cool in front of non-technical people
-        beforeSend: function() {
-            table.css({'opacity' : '0.4'});
-            $("#submit-button").attr("disabled", "disabled");
-        },
-        complete: function() {
-            table.css({'opacity' : '1.0'});
-            $("#submit-button").removeAttr("disabled");
-        }
-    });
+		// add a blur effect while submitting
+		// just to be cool in front of non-technical people
+		beforeSend: function() {
+			table.css({'opacity' : '0.4'});
+			$("#submit-button").attr("disabled", "disabled");
+		},
+		complete: function() {
+			table.css({'opacity' : '1.0'});
+			$("#submit-button").removeAttr("disabled");
+		}
+	});
 }
 
 function stripHTML(dirtyString) {
@@ -70,63 +70,53 @@ function stripHTML(dirtyString) {
 
 $(document).ready(function(){
 
-
-	
 	$("#branch_select, #semester_select, #section_select").change(function() {
-
-
 		var reqObj = new Object();
+		var table = $('body').find('table');
+		
 		reqObj.branch = parseInt($('#branch_select').val());
 		reqObj.semester = parseInt($('#semester_select').val());
 		reqObj.section = parseInt($('#section_select').val());
 		reqObj = $.param(reqObj);
+		
 		var url = config_api_url + "get-data.php?" + reqObj;
 		
+		$.ajax({
+			url: url,
+			success: function(result){
+				result = JSON.parse(result);
+				var timetable = result.timetable;
+				var day = 0;
+				var slot = 0;
 
-		$.ajax({url: url ,
-		 success: function(result){
-        	
+				$("td").each(function(){
+					if (slot == 10) {
+						slot = 0;
+						day++;
+					}
 
-		 	result = JSON.parse(result);
-		 	
-		 	var timetable = result.timetable;
-		 	var day = 0;
-		 	var slot = 0;
-		 	$("td").each(function(){
-
-		 		if (slot==10) {
-		 			slot = 0;
-		 			day++;
-		 		}
-		 		
-		 		$(this).children("select").val(timetable[day][slot].value).change();
-		 		switch(timetable[day][slot].value){
-					
-					case "theory" : 
+					$(this).children("select").val(timetable[day][slot].value).change();
+					switch(timetable[day][slot].value){
+						case "theory" : 
+							$(this).children().children('.subject').val(timetable[day][slot].subject);
+							$(this).children().children('.prof').val(timetable[day][slot].prof);
+							$(this).children().children('.room').val(timetable[day][slot].room);
+							break;
 						
-						$(this).children().children('.subject').val(timetable[day][slot].subject);
-						$(this).children().children('.prof').val(timetable[day][slot].prof);
-						$(this).children().children('.room').val(timetable[day][slot].room);
-						break;
-					
-					case "lab" :
+						case "lab" :
+							$(this).children().children('.subject').val(timetable[day][slot].subject);
+							$(this).children().children('.prof_FH').val(timetable[day][slot].prof_FH);
+							$(this).children().children('.room_FH').val(timetable[day][slot].room_FH);
+							$(this).children().children('.prof_SH').val(timetable[day][slot].prof_SH);
+							$(this).children().children('.room_SH').val(timetable[day][slot].room_SH);
+							break;
+					}
 
-						$(this).children().children('.subject').val(timetable[day][slot].subject);
-						$(this).children().children('.prof_FH').val(timetable[day][slot].prof_FH);
-						$(this).children().children('.room_FH').val(timetable[day][slot].room_FH);
-						$(this).children().children('.prof_SH').val(timetable[day][slot].prof_SH);
-						$(this).children().children('.room_SH').val(timetable[day][slot].room_SH);
-						
-						break;
-				}
-		 		slot++;
-
-		 	});
-
-
-   		}});
-
-}	);
+					slot++;
+				});
+			}
+		});
+	});
 
 
 
@@ -200,8 +190,8 @@ $(document).ready(function(){
 					temp_object = {},
 
 					f$ = function(selector) {
-			            return selected_div.find("input[placeholder='" + selector + "']").val();
-			        };
+						return selected_div.find("input[placeholder='" + selector + "']").val();
+					};
 
 				temp_object.value = value.replace(/(<([^>]+)>)/ig,"");
 
@@ -209,18 +199,18 @@ $(document).ready(function(){
 				// temp_object represtns one slot
 
 				$('input').each(function () {
-    				if ($.trim($(this).val()) == '') {
-        				isValid = false;
-       					$(this).addClass('empty');
+					if ($.trim($(this).val()) == '') {
+						isValid = false;
+						$(this).addClass('empty');
 
-    				} else{
-    					$(this).removeClass('empty');
-    				}
+					} else{
+						$(this).removeClass('empty');
+					}
 				});
 				$('input').focus(function () {
    
-        			$(this).removeClass('empty');
-      
+					$(this).removeClass('empty');
+	  
 				});
 				
 				switch(value){
