@@ -3,17 +3,19 @@ var excluded_branches = [2,5,6,7];
 
 // checks if the "element" is present inside "array" or not 
 function isArray(array, element) {
-    return array.indexOf(element) > -1;
+	return array.indexOf(element) > -1;
 }
 
 
 function addFields(flag, div){
 	if(flag){
-		div.html('<input class="form-control input-sm" placeholder="subject"><input class="form-control input-sm" placeholder="professor FH"><input class="form-control input-sm" placeholder="room FH"><input class="form-control input-sm" placeholder="professor SH"><input class="form-control input-sm" placeholder="room SH">');
+		div.html('<input class="form-control input-sm subject" placeholder="subject"><input class="form-control input-sm prof_FH" placeholder="professor FH"><input class="form-control input-sm room_FH" placeholder="room FH"><input class="form-control input-sm prof_SH" placeholder="professor SH"><input class="form-control input-sm room_SH" placeholder="room SH">');
 	} else {
-		div.html('<input class="form-control input-sm" placeholder="subject"><input class="form-control input-sm" placeholder="professor code"><input class="form-control input-sm" placeholder="room">');
+		div.html('<input class="form-control input-sm subject" placeholder="subject"><input class="form-control input-sm prof" placeholder="professor code"><input class="form-control input-sm room" placeholder="room">');
 	}
 }
+
+
 
 
 function showMessage(status, message){
@@ -29,13 +31,13 @@ function showMessage(status, message){
 
 function sendData(json){
 	var table = $('body').find('table');
-    $.ajax({
-        type : 'POST',
-        data : {
-            json : JSON.stringify(json)
-        },
-        url : config_api_url + "save-response.php",
-        success: function(data) {                    
+	$.ajax({
+		type : 'POST',
+		data : {
+			json : JSON.stringify(json)
+		},
+		url : config_api_url + "save-response.php",
+		success: function(data) {                    
 			var response = jQuery.parseJSON(data);
 
 			// API returns a "success" flag to check if the data was successfully saved or not
@@ -44,19 +46,19 @@ function sendData(json){
 			} else {
 				showMessage("danger", "There was some technical high level error, try again after sometime.<br><strong>If the problem continues, ask some senior to look into the same</strong>");
 			}
-        },
+		},
 
-        // add a blur effect while submitting
-        // just to be cool in front of non-technical people
-        beforeSend: function() {
-            table.css({'opacity' : '0.4'});
-            $("#submit-button").attr("disabled", "disabled");
-        },
-        complete: function() {
-            table.css({'opacity' : '1.0'});
-            $("#submit-button").removeAttr("disabled");
-        }
-    });
+		// add a blur effect while submitting
+		// just to be cool in front of non-technical people
+		beforeSend: function() {
+			table.css({'opacity' : '0.4'});
+			$("#submit-button").attr("disabled", "disabled");
+		},
+		complete: function() {
+			table.css({'opacity' : '1.0'});
+			$("#submit-button").removeAttr("disabled");
+		}
+	});
 }
 
 function stripHTML(dirtyString) {
@@ -67,6 +69,58 @@ function stripHTML(dirtyString) {
 }
 
 $(document).ready(function(){
+
+	$("#branch_select, #semester_select, #section_select").change(function() {
+		var reqObj = new Object();
+		var table = $('body').find('table');
+		
+		reqObj.branch = parseInt($('#branch_select').val());
+		reqObj.semester = parseInt($('#semester_select').val());
+		reqObj.section = parseInt($('#section_select').val());
+		reqObj = $.param(reqObj);
+		
+		var url = config_api_url + "get-data.php?" + reqObj;
+		
+		$.ajax({
+			url: url,
+			success: function(result){
+				result = JSON.parse(result);
+				var timetable = result.timetable;
+				var day = 0;
+				var slot = 0;
+
+				$("td").each(function(){
+					if (slot == 10) {
+						slot = 0;
+						day++;
+					}
+
+					$(this).children("select").val(timetable[day][slot].value).change();
+					switch(timetable[day][slot].value){
+						case "theory" : 
+							$(this).children().children('.subject').val(timetable[day][slot].subject);
+							$(this).children().children('.prof').val(timetable[day][slot].prof);
+							$(this).children().children('.room').val(timetable[day][slot].room);
+							break;
+						
+						case "lab" :
+							$(this).children().children('.subject').val(timetable[day][slot].subject);
+							$(this).children().children('.prof_FH').val(timetable[day][slot].prof_FH);
+							$(this).children().children('.room_FH').val(timetable[day][slot].room_FH);
+							$(this).children().children('.prof_SH').val(timetable[day][slot].prof_SH);
+							$(this).children().children('.room_SH').val(timetable[day][slot].room_SH);
+							break;
+					}
+
+					slot++;
+				});
+			}
+		});
+	});
+
+
+
+
 	// when the user changes any slot type
 	// possible slot types are "theory", "lab" and "break" or "lunch break"
 	// "break" and "lunch break" serve same purpose except in the android app they are highlighted differently
@@ -136,13 +190,28 @@ $(document).ready(function(){
 					temp_object = {},
 
 					f$ = function(selector) {
-			            return selected_div.find("input[placeholder='" + selector + "']").val();
-			        };
+						return selected_div.find("input[placeholder='" + selector + "']").val();
+					};
 
 				temp_object.value = value.replace(/(<([^>]+)>)/ig,"");
 
 				// temp_row represnts one day
 				// temp_object represtns one slot
+
+				$('input').each(function () {
+					if ($.trim($(this).val()) == '') {
+						isValid = false;
+						$(this).addClass('empty');
+
+					} else{
+						$(this).removeClass('empty');
+					}
+				});
+				$('input').focus(function () {
+   
+					$(this).removeClass('empty');
+	  
+				});
 				
 				switch(value){
 					// there is only one prof and one room
@@ -151,8 +220,10 @@ $(document).ready(function(){
 						temp_object.prof 	= f$('professor code');
 						temp_object.room 	= f$('room');;
 
-						if(temp_object.room == '' || temp_object.prof == '' || temp_object.subject == '')
+						if(temp_object.room == '' || temp_object.prof == '' || temp_object.subject == ''){
 							send_flag = false;
+
+						}
 
 						break;
 
