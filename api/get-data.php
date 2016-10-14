@@ -3,7 +3,7 @@
  * @Author: prabhakar
  * @Date:   2016-03-25 21:40:40
  * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-08-27 23:01:07
+ * @Last Modified time: 2016-10-14 23:38:21
  */
 
 /**
@@ -11,7 +11,7 @@
  * Parameters : branch, semester, section
  */
 
-$final_response = array();
+$final_response = "{}";
 $url = "../res/";
 
 if(isset($_GET['branch']) && isset($_GET['semester']) && isset($_GET['section'])){
@@ -29,8 +29,10 @@ if(isset($_GET['branch']) && isset($_GET['semester']) && isset($_GET['section'])
 
 	$filename = array($branch, $semester, $section);
 	$filename = implode("-", $filename);
+	$filepath = $url . $filename;
 
-	$final_response = file_get_contents($url . $filename);
+	if(file_exists($filepath))
+		$final_response = file_get_contents($filepath);
 
 }
 echo $final_response;
