@@ -1,4 +1,7 @@
 <?php
+
+require_once 'error.inc.php';
+
 /**
  * Sends out the timetable JSON 
  * Parameters : branch, semester, section
@@ -24,8 +27,15 @@ if(isset($_GET['branch']) && isset($_GET['semester']) && isset($_GET['section'])
 	$filename = implode("-", $filename);
 	$filepath = $url . $filename;
 
-	if(file_exists($filepath))
+	if(file_exists($filepath)){
 		$final_response = file_get_contents($filepath);
+		
+		$final_response = json_decode($final_response, true);
+
+		$final_response['professors'] = [];
+		$final_response['subjects'] = [];
+	}
 
 }
-echo $final_response;
+
+echo json_encode($final_response);
