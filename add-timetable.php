@@ -1,22 +1,15 @@
 <?php
-/**
- * @Author: prabhakar
- * @Date:   2016-03-26 00:14:52
- * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-03-26 01:05:53
- */
+
+	require_once 'inc/func.inc.php';
+
+	$field_type_string = "<option value='break'>Break</option><option value='lunch break'>Lunch Break</option><option value='theory'>Theory</option><option value='lab'>Lab</option>";
+	$DAY_OF_WEEK = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
+
+	if(!loggedIn())
+		header('Location: index.php');
 
 
-require_once 'inc/func.inc.php';
-
-$field_type_string = "<option value='break'>Break</option><option value='lunch break'>Lunch Break</option><option value='theory'>Theory</option><option value='lab'>Lab</option>";
-$DAY_OF_WEEK = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
-
-if(!loggedIn())
-	header('Location: index.php');
-
-
-include 'inc/public/meta.inc.php';
+	include 'inc/public/meta.inc.php';
 
 ?>
 	<script type="text/javascript">
@@ -30,7 +23,7 @@ echo "\t\tconfig_api_url = '" . implode('/', $current_url) . "/api/';" . PHP_EOL
 	</script>
 <style type="text/css">
 	.empty {
-    background-color: #ffcccc;
+	background-color: #ffcccc;
 }
 
 </style>
