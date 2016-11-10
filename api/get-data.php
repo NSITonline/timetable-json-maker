@@ -7,7 +7,7 @@ require_once 'error.inc.php';
  * Parameters : branch, semester, section
  */
 
-$final_response = "{}";
+$final_response = new stdClass();
 $url = "../res/";
 
 if(isset($_GET['branch']) && isset($_GET['semester']) && isset($_GET['section'])){
