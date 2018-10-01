@@ -54,3 +54,7 @@ form#login-form{
 table {
     background-color: white;
 }
+
+input.invalid {
+    border: 1px solid red;
+}
