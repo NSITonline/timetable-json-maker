@@ -179,7 +179,8 @@ $(document).ready(function(){
 			var send_flag = true,
 				row_count = 1,
 				day_count = 0,
-				temp_row = [];
+				temp_row = [],
+				invalids = [];
 
 			// iterates over all the periods
 			// it goes Monday 1st period to Monday 10th period, then Tuesday and so on
@@ -189,8 +190,11 @@ $(document).ready(function(){
 					value = selected_div.children('select').val().toLowerCase(),
 					temp_object = {},
 
+					e$ = function(selector) {
+                        return selected_div.find("input[placeholder='" + selector + "']");
+					};
 					f$ = function(selector) {
-						return selected_div.find("input[placeholder='" + selector + "']").val();
+						return e$(selector).val();
 					};
 
 				temp_object.value = value.replace(/(<([^>]+)>)/ig,"");
@@ -216,13 +220,19 @@ $(document).ready(function(){
 				switch(value){
 					// there is only one prof and one room
 					case "theory" : 
-						temp_object.subject = f$('subject');
-						temp_object.prof 	= f$('professor code');
-						temp_object.room 	= f$('room');;
 
-						if(temp_object.room == '' || temp_object.prof == '' || temp_object.subject == ''){
-							send_flag = false;
-
+						var map = {subject: "subject", prof: "professor code", room: "room"};
+						for (var field in map) {
+							temp_object[field] = f$(map[field]);
+							if (temp_object[field] == '') {
+								send_flag = false;
+                                e$(map[field]).addClass('invalid');
+                                if (invalids.indexOf() == -1) {
+                                    invalids.push(map[field]);
+                                }
+							} else {
+                                e$(map[field]).removeClass('invalid');
+							}
 						}
 
 						break;
@@ -230,15 +240,26 @@ $(document).ready(function(){
 					// there are 2 subjects, 2 profs and 2 rooms
 					// subject is to entered in the single field only as (subj1 + subj2)
 					case "lab" :
-						temp_object.subject = f$('subject');
-						temp_object.prof_FH = f$('professor FH');
-						temp_object.room_FH = f$('room FH');
-						temp_object.prof_SH = f$('professor SH');
-						temp_object.room_SH = f$('room SH');
-						
-						if(temp_object.subject == '' || temp_object.prof_FH == '' || temp_object.room_FH == '' || temp_object.prof_SH == '' || temp_object.room_SH == '')
-							send_flag = false;
-						
+                        var map = {
+                        	subject: "subject",
+                            prof_FH: "professor FH",
+                            room_FH: "room FH",
+                            prof_SH: "professor SH",
+                            room_SH: "room SH"
+                        };
+                        for (var field in map) {
+                            temp_object[field] = f$(map[field]);
+                            if (temp_object[field] == '') {
+                                send_flag = false;
+                                e$(map[field]).addClass('invalid');
+                                if (invalids.indexOf() == -1) {
+                                	invalids.push(map[field]);
+								}
+                            } else {
+                                e$(map[field]).removeClass('invalid');
+                            }
+                        }
+
 						break;
 
 					// simple things
@@ -259,7 +280,7 @@ $(document).ready(function(){
 	
 			// if there is some field which is left blank "send_flag" would be set to false 
 			if(!send_flag){
-				alert("Fields not complete");
+				alert("Fields not complete: " + invalids.join(", "));
 			} else {
 				sendData(sendJSON);
 			}
